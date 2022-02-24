@@ -5,8 +5,83 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify - Clone</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://kit.fontawesome.com/7976a7248f.js" crossorigin="anonymous"></script>
+  <script defer src="./src/main.js"></script>
 </head>
 <body>
-    
+
+  <!-- main -->
+  <section class="main">
+    <!-- navBar -->
+    <nav class="navBar">
+      <div class="navLogo">
+        <img src="./imgs/logo.png" alt="logo" class="navLogo__img">
+      </div>
+      <div class="navUpperMenu">
+        <ul class="navUpperMenu__ul">
+          <li class="navUpperMenu__li"><i class="fa-solid fa-house"></i>홈</li>
+          <li class="navUpperMenu__li"><i class="fa-solid fa-search"></i>검색하기</li>
+          <li class="navUpperMenu__li"><i class="fa-solid fa-book"></i>내 라이브러리</li>
+          <li class="navUpperMenu__li"><i class="fa-soPlid fa-square-plus"></i>플레이리스트 만들기</li>
+          <li class="navUpperMenu__li"><i class="fa-solid fa-heart"></i>좋아요 표시한 곡</li>
+        </ul>
+      </div>
+      <hr class="navMiddleBar">
+      <div class="navLowerMenu">
+        <ul class="navLowerMenu__ul">
+          <li class="navLowerMenu__li">Mock Up Data</li>
+          <li class="navLowerMenu__li">내 플레이리스트 #5</li>
+          <li class="navLowerMenu__li">아이유 믹스</li>
+        </ul>
+        
+      </div>
+    </nav>
+    <!-- body -->
+    <section class="body">
+      <!-- header -->
+      <header class="header">
+        header
+        <div class="prevAndNextBtns"></div>
+        <div class="profile"></div>
+        <div class="ad"></div>
+      </header>
+
+      <!-- boxes -->
+      <section class="boxes">
+        boxes
+      </section>
+
+    </section> <!-- .body END-->
+  </section> <!-- .main END-->
+
+  <!-- playbackPannel -->
+  <footer class="playbackPannel">
+    <div class="leftSongInfo">
+      <img src="#" alt="" class="leftSongInfo__albumCover">
+      <p class="leftSongInfo__title"></p>
+      <p class="leftSongInfo__artist"></p>
+      <button class="leftSongInfo__like"></button>
+      <button class="leftSongInfo__pip"></button>
+    </div>
+    <div class="middlePlayBack">
+      <button class="middlePlayBack__shuffle"></button>
+      <button class="middlePlayBack__prevSong"></button>
+      <button class="middlePlayBack__playAndPause"></button>
+      <button class="middlePlayBack__nextSong"></button>
+      <button class="middlePlayBack__repeat"></button>
+      <div class="middlePlayBack__time"></div>
+    </div>
+    <div class="rightListeningOptions">
+      <button class="rightListeningOptions__lyrics"></button>
+      <button class="rightListeningOptions__playlist"></button>
+      <button class="rightListeningOptions__devices"></button>
+      <button class="rightListeningOptions__volume"></button>
+      <div class="rightListeningOptions__volumeBar"></div>
+    </div>
+  </footer>
+
 </body>
 </html>
