@@ -1,13 +1,15 @@
 :root{
   /* Color  */
   --color-nav: #000;
-  --color-navFont : #b3b3b3;
+  --color-subGrey : #b3b3b3;
   --color-body : #121212;
   --color-footer: #181818;
+  --color-clickesGreen : #1db954;
 
   /* Size */
   --size-nav-Margin : 24px 0;
   --size-nav-Padding : 0 24px;
+
 }
 
 * {
@@ -21,6 +23,16 @@ html, body{
 }
 body{
   overflow: hidden;
+}
+
+button{
+  border: none;
+  padding: 0;
+}
+
+i {
+  font-size: 16px;
+  color:var(--color-subGrey);
 }
 
 /* main */
@@ -65,7 +77,7 @@ body{
 .navLowerMenu__li{
   margin:24px 0;
   cursor: pointer;
-  color:var(--color-navFont);
+  color:var(--color-subGrey);
 }
 
 .navUpperMenu__li:hover,
@@ -131,27 +143,164 @@ body{
 /********* footer - playbackPannel *********/
 .playbackPannel{
   width: 100%;
-  height: 10%;
+  height: 96px;
   background-color:var(--color-footer);
   position: fixed;
   bottom:0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
+/* 일괄 적용 */
+.playbackPannel__btns{
+  width: 16px;
+  height: 16px;
+  display: flex;
+  background-color: var(--color-footer);
+}
+.playbackPannel__btns i:hover{
+  color:#fff;
+}
+
+.fa-solid--green{
+  color:var(--color-clickesGreen);
+}
+
+
+.bars:hover{
+  background-color:var(--color-clickesGreen);
+}
+
+
+/* 이와 같은 일괄 적용은 중복된 코드를 줄이지만, score 문제를 야기한다 */
+/* .playbackPannel button{
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-footer);
+} */
+
+/* leftSongInfo */
 .leftSongInfo{
   width: 300px;
-  height: 100%;
-  background-color: #fff;
-}
-.middlePlayBack{
-  width: 500px;
-  height: 100%;
-  background-color: #fff;
+  height: 80%;
+  margin: 24px;
+  display: flex;
+  align-items: center;
 
 }
+
+.leftSongInfo__albumCover{
+  width: 56px;
+  height: 56px;
+}
+
+.leftSongInfo__songInfoBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin : 0 12px;
+
+}
+
+.songInfoBox__title{
+
+}
+.songInfoBox__artist{
+  color:var(--color-subGrey);
+}
+
+.leftSongInfo__like{
+}
+
+.leftSongInfo__like i{
+  display: flex;
+}
+
+.leftSongInfo__pip{
+  margin : 0 12px;
+}
+.leftSongInfo__pip i{
+  display: flex;
+}
+
+
+/* middlePlayBack */
+.middlePlayBack{
+  width: 722px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.middlePlayBack__upperBox{
+  width:200px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middlePlayBack__upperBox button i{
+  display: flex;
+}
+
+.middlePlayBack__playAndPause {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  color:#000;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.middlePlayBack__playAndPause:hover{
+  transform: scale(1.1);
+
+}
+
+.middlePlayBack__playAndPause i {
+  color:#000;
+}
+.middlePlayBack__playAndPause i:hover{
+  color:#000;
+}
+
+/* lowerBox */
+.middlePlayBack__lowerBox{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top:12px;
+
+}
+.middlePlayback__timeline{
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-subGrey);
+  margin: 0 8px;
+}
+.middlePlayBack__timeFont{
+  color: var(--color-subGrey);
+}
+
+
+/* rightListeningOptions */
 .rightListeningOptions{
   width: 300px;
-  height: 100%;
-  background-color: #fff;
+  height: 80%;
+  background-color: var(--color-footer);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rightListeningOptions__volumeBar{
+  width: 93px;
+  height: 3px;
+  background-color:var(--color-subGrey);
+  margin-left: -12px;
 }

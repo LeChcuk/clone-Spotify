@@ -60,26 +60,64 @@
   <!-- playbackPannel -->
   <footer class="playbackPannel">
     <div class="leftSongInfo">
-      <img src="#" alt="" class="leftSongInfo__albumCover">
-      <p class="leftSongInfo__title"></p>
-      <p class="leftSongInfo__artist"></p>
-      <button class="leftSongInfo__like"></button>
-      <button class="leftSongInfo__pip"></button>
+      <img src="./imgs/macmiller.jpg" alt="" class="leftSongInfo__albumCover">
+      <div class="leftSongInfo__songInfoBox">
+        <p class="songInfoBox__title">Everybody</p>
+        <p class="songInfoBox__artist">Mac Miller</p>
+      </div>
+      
+      <button class="leftSongInfo__like playbackPannel__btns">
+        <i class="fa-solid fa-solid--green-off fa-heart"></i>
+      </button>
+      <button class="leftSongInfo__pip playbackPannel__btns">
+        <i class="fa-solid fa-solid--green-off fa-window-restore"></i>
+      </button>
     </div>
+
     <div class="middlePlayBack">
-      <button class="middlePlayBack__shuffle"></button>
-      <button class="middlePlayBack__prevSong"></button>
-      <button class="middlePlayBack__playAndPause"></button>
-      <button class="middlePlayBack__nextSong"></button>
-      <button class="middlePlayBack__repeat"></button>
-      <div class="middlePlayBack__time"></div>
+      <div class="middlePlayBack__upperBox">
+        <button class="middlePlayBack__shuffle playbackPannel__btns ">
+          <i class="fa-solid fa-solid--green-off fa-shuffle"></i>
+        </button>
+        <button class="middlePlayBack__prevSong playbackPannel__btns">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <button class="middlePlayBack__playAndPause playbackPannel__btns">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button class="middlePlayBack__nextSong playbackPannel__btns">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+        <button class="middlePlayBack__repeat playbackPannel__btns">
+          <i class="fa-solid fa-solid--green-off fa-repeat"></i>
+        </button>
+      </div>
+      <div class="middlePlayBack__lowerBox">
+        <p class="middlePlayBack__currentTime middlePlayBack__timeFont">0:00</p>
+        <div class="middlePlayback__timeline bars"></div>
+        <p class="middlePlayBack__amoutTime middlePlayBack__timeFont">4:27</p>
+      </div>
     </div>
+
     <div class="rightListeningOptions">
-      <button class="rightListeningOptions__lyrics"></button>
-      <button class="rightListeningOptions__playlist"></button>
-      <button class="rightListeningOptions__devices"></button>
-      <button class="rightListeningOptions__volume"></button>
-      <div class="rightListeningOptions__volumeBar"></div>
+      <button class="rightListeningOptions__lyrics playbackPannel__btns">
+        <i class="fa-solid fa-solid--green-off fa-microphone"></i>
+      </button>
+      <button class="rightListeningOptions__playlist playbackPannel__btns">
+        <i class="fa-solid fa-solid--green-off fa-bars"></i>
+      </button>
+      <button class="rightListeningOptions__devices playbackPannel__btns">
+        <i class="fa-solid fa-hard-drive"></i>
+      </button>
+      <button class="rightListeningOptions__volume playbackPannel__btns">
+        <i class="fa-solid fa-volume-low"></i>
+      </button>
+      <div class="rightListeningOptions__volumeBar playbackPannel__btns bars">
+        
+      </div>
+      <div class="rightListeningOptions__fullSize playbackPannel__btns">
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
     </div>
   </footer>
 
