@@ -7,22 +7,21 @@
   <title>Spotify - Clone</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link rel="stylesheet" type="text/css" href="./src/css/main.css">
+  <link rel="stylesheet" href="/index.b1276d39.css">
   <script src="https://kit.fontawesome.com/7976a7248f.js" crossorigin="anonymous"></script>
-  <script defer src="./src/main.js"></script>
+  <script defer="" src="/index.de158e3a.js"></script>
 </head>
 <body>
 
   <!-- main -->
   <section class="main">
-
-    <!-- nav
-    <nav class="nav"> 
-      <div class="navLogo"> nav__logo
-        <img src="./imgs/logo.png" alt="logo" class="navLogo__img"> nav__logoImg
+    <!-- navBar -->
+    <nav class="navBar">
+      <div class="navLogo">
+        <img src="/logo.c5dd6f41.png" alt="logo" class="navLogo__img">
       </div>
-      <div class="navUpperMenu"> nav_upperMenu
-        <ul class="navUpperMenu__ul"> nav__ul
+      <div class="navUpperMenu">
+        <ul class="navUpperMenu__ul">
           <li class="navUpperMenu__li"><i class="fa-solid fa-house"></i>홈</li>
           <li class="navUpperMenu__li"><i class="fa-solid fa-search"></i>검색하기</li>
           <li class="navUpperMenu__li"><i class="fa-solid fa-book"></i>내 라이브러리</li>
@@ -31,35 +30,13 @@
         </ul>
       </div>
       <hr class="navMiddleBar">
-      <div class="navLowerMenu"> nav__lowerMenu
-        <ul class="navLowerMenu__ul"> nav__ul
-          <li class="navLowerMenu__li">Mock Up Data</li> nav__li
+      <div class="navLowerMenu">
+        <ul class="navLowerMenu__ul">
+          <li class="navLowerMenu__li">Mock Up Data</li>
           <li class="navLowerMenu__li">내 플레이리스트 #5</li>
           <li class="navLowerMenu__li">아이유 믹스</li>
         </ul>
-      </div>
-    </nav> -->
-
-    <!-- nav -->
-    <nav class="nav"> 
-      <div class="nav__logo">
-        <img src="./imgs/logo.png" alt="logo" class="nav__logoImg"> 
-      </div>
-      <div class="nav__upperMenu">
-        <ul class="nav__ul">
-          <li class="nav__li"><i class="fa-solid fa-house"></i>홈</li>
-          <li class="nav__li"><i class="fa-solid fa-search"></i>검색하기</li>
-          <li class="nav__li"><i class="fa-solid fa-book"></i>내 라이브러리</li>
-          <li class="nav__li"><i class="fa-solid fa-square-plus"></i>플레이리스트 만들기</li>
-          <li class="nav__li"><i class="fa-solid fa-heart"></i>좋아요 표시한 곡</li>
-        </ul>
-      </div>
-      <hr class="horizonBar">
-      <div class="nav__lowerMenu">
-          <li class="nav__li">Mock Up Data</li>
-          <li class="nav__li">내 플레이리스트 #5</li>
-          <li class="nav__li">아이유 믹스</li>
-        </ul>
+        
       </div>
     </nav>
     <!-- body -->
@@ -80,65 +57,65 @@
     </section> <!-- .body END-->
   </section> <!-- .main END-->
 
-  <!-- footer -->
-  <footer class="footer">
+  <!-- playbackPannel -->
+  <footer class="playbackPannel">
     <div class="leftSongInfo">
-      <img src="./imgs/macmiller.jpg" alt="" class="leftSongInfo__albumCover">
+      <img src="/macmiller.fc94d691.jpg" alt="" class="leftSongInfo__albumCover">
       <div class="leftSongInfo__songInfoBox">
-        <p class="leftSongInfo__title">Everybody</p>
-        <p class="leftSongInfo__artist">Mac Miller</p>
+        <p class="songInfoBox__title">Everybody</p>
+        <p class="songInfoBox__artist">Mac Miller</p>
       </div>
       
-      <button class="leftSongInfo__like footer__btns">
+      <button class="leftSongInfo__like playbackPannel__btns">
         <i class="fa-solid fa-solid--green-off fa-heart"></i>
       </button>
-      <button class="leftSongInfo__pip footer__btns">
+      <button class="leftSongInfo__pip playbackPannel__btns">
         <i class="fa-solid fa-solid--green-off fa-window-restore"></i>
       </button>
     </div>
 
     <div class="middlePlayBack">
       <div class="middlePlayBack__upperBox">
-        <button class="middlePlayBack__shuffle footer__btns ">
+        <button class="middlePlayBack__shuffle playbackPannel__btns ">
           <i class="fa-solid fa-solid--green-off fa-shuffle"></i>
         </button>
-        <button class="middlePlayBack__prevSong footer__btns">
+        <button class="middlePlayBack__prevSong playbackPannel__btns">
           <i class="fa-solid fa-backward-step"></i>
         </button>
-        <button class="middlePlayBack__playAndPause footer__btns">
+        <button class="middlePlayBack__playAndPause playbackPannel__btns">
           <i class="fa-solid fa-play"></i>
         </button>
-        <button class="middlePlayBack__nextSong footer__btns">
+        <button class="middlePlayBack__nextSong playbackPannel__btns">
           <i class="fa-solid fa-forward-step"></i>
         </button>
-        <button class="middlePlayBack__repeat footer__btns">
+        <button class="middlePlayBack__repeat playbackPannel__btns">
           <i class="fa-solid fa-solid--green-off fa-repeat"></i>
         </button>
       </div>
       <div class="middlePlayBack__lowerBox">
         <p class="middlePlayBack__currentTime middlePlayBack__timeFont">0:00</p>
-        <div class="middlePlayBack__timeline horizonBars"></div>
+        <div class="middlePlayback__timeline bars"></div>
         <p class="middlePlayBack__amoutTime middlePlayBack__timeFont">4:27</p>
       </div>
     </div>
 
     <div class="rightListeningOptions">
-      <button class="rightListeningOptions__lyrics footer__btns">
+      <button class="rightListeningOptions__lyrics playbackPannel__btns">
         <i class="fa-solid fa-solid--green-off fa-microphone"></i>
       </button>
-      <button class="rightListeningOptions__playlist footer__btns">
+      <button class="rightListeningOptions__playlist playbackPannel__btns">
         <i class="fa-solid fa-solid--green-off fa-bars"></i>
       </button>
-      <button class="rightListeningOptions__devices footer__btns">
+      <button class="rightListeningOptions__devices playbackPannel__btns">
         <i class="fa-solid fa-hard-drive"></i>
       </button>
-      <button class="rightListeningOptions__volume footer__btns">
+      <button class="rightListeningOptions__volume playbackPannel__btns">
         <i class="fa-solid fa-volume-low"></i>
       </button>
-      <div class="rightListeningOptions__volumeBar footer__btns horizonBars">
+      <div class="rightListeningOptions__volumeBar playbackPannel__btns bars">
         
       </div>
-      <div class="rightListeningOptions__fullSize footer__btns">
+      <div class="rightListeningOptions__fullSize playbackPannel__btns">
         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
       </div>
     </div>

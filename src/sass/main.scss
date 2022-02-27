@@ -1,0 +1,49 @@
+@use 'mainBody';
+@use 'footer';
+@use './abstracts/variables';
+
+
+* {
+  box-sizing: border-box;
+  font-size:60px;
+  color:white;
+}
+
+html, body{
+  height: 100%;
+}
+body{
+  overflow: hidden;
+}
+
+button{
+  border: none;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+i {
+  font-size: 16px;
+  color:variables.$color-subGrey;
+}
+
+/* BEM Block(Common) */
+.horizonBar{
+  background-color: #282828;
+  border: 0;
+  height: 1px;
+  margin : 24px;
+}
+
+/* 일괄 적용 */
+.fa-solid--green{
+  color:variables.$color-clickesGreen;
+}
+
+
+.horizonBars:hover{
+  background-color:variables.$color-clickesGreen;
+}
