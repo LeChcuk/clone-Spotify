@@ -1,0 +1,51 @@
+@use '../abstracts/' as *;
+
+.playBack{
+  width: 722px;
+  height: $size-footer-divs-height;
+  @include flexForAlign(center, center, column);
+  /* upperBox */
+  &__upperBox{
+    width:200px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  // footer 일괄 적용 코드를 덮어씌우기 위한 important
+  &__playAndPause {
+    width: 32px !important;
+    height: 32px !important;
+    background-color: #fff !important;
+    color:#000;
+    border-radius: 50%;
+    @include flexForAlign(center, center);
+    &:hover{
+      transform: scale(1.1);
+    }
+    & i {
+      color:#000;
+      &:hover{
+        color:#000;
+      }
+    }
+  }
+  /* lowerBox */
+  &__lowerBox{
+    width: 100%;
+    @include flexForAlign($crossAxis: center, $direction:row);
+    margin-top:12px;
+  }
+
+  &__timeline{
+    width: 100%;
+    height: 4px;
+    background-color: $color-subGrey;
+    margin: 0 8px;
+  }s
+
+  &__timeFont{
+    color: $color-subGrey;
+  }
+} 

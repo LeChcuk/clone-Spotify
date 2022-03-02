@@ -1,6 +1,5 @@
 // 반응형을 위한 @media query
 
-
 @mixin flexForAlign($mainAxis: center, $crossAxis: center, $direction:row){
   display: flex;
   justify-content: $mainAxis;

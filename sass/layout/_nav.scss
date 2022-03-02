@@ -5,10 +5,8 @@
   width: $size-nav-width;
   height: 100%;
   background-color: $color-nav;
-  position: sticky;
-  top:0;
-  left:0;
-
+  grid-area: nav-bar;
+  position: fixed;
   &__logo{
     width: 100%;
     height: 65px;

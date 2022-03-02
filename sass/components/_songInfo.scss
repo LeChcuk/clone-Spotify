@@ -1,0 +1,26 @@
+@use '../abstracts/' as *;
+
+.songInfo{
+  width: 300px;
+  height: $size-footer-divs-height;
+  margin: 24px;
+  display: flex;
+  align-items: center;
+  &__albumCover{
+    width: $size-footer-albumCover-width;
+    height: $size-footer-albumCover-height;
+  }
+
+  &__textBox{
+    @include flexForAlign(center, $direction : column);
+    margin : $size-footer-songInfo-margin;
+  }
+
+  &__artist{
+    color: $color-subGrey;
+  }
+  
+  &__pip{
+    margin : $size-footer-songInfo-margin;
+  }
+}
