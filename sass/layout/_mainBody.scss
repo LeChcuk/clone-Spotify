@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+
+/******** main ********/
+.main{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  
+  /********* body *********/
+  .body{
+    @include flexForAlign($direction:column);
+    width: 100%;
+    height:3000px;
+    background-color: $color-body;
+    position: relative;
+
+    /********* boxes *********/
+    .boxes{
+      height: 100%;
+      width: 100%;
+    }
+  }
+} /********* main END *********/
+
+.boxes{
+  margin: $size-body-margin;
+}  
+
+.box{
+  width: 1891px;
+  height: 316px;
+  margin: $size-body-margin;
+  @include flexForAlign(space-between,flex-start,column);
+
+  &__title{
+
+  }
+
+  &__cardsContainer{
+    display: flex;
+  }
+}

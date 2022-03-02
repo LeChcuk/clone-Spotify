@@ -1,0 +1,49 @@
+@use '../abstracts/' as *;
+// @forward '../abstracts/variables';
+
+* {
+  box-sizing: border-box;
+  font-size:60px;
+  color:white;
+}
+
+html, body{
+  height: 100%;
+}
+body{
+  overflow: hidden;
+}
+
+button{
+  border: none;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+i {
+  display: flex;
+  font-size: 16px;
+  color:$color-subGrey;
+}
+
+h1 {
+  font-size: $size-font-h1;
+  font-weight: $weight-font-h1;
+}
+
+h2{
+  font-size: $size-font-h2;
+  font-weight: $weight-font-h2;
+}
+
+/* 일괄 적용 */
+.fa-solid--green{
+  color: $color-clickesGreen;
+}
+
+.horizonBars:hover{
+  background-color: $color-clickesGreen;
+}

@@ -1,0 +1,443 @@
+@charset "UTF-8";
+/* Size */
+* {
+  box-sizing: border-box;
+  font-size: 60px;
+  color: white;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  display: flex;
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* 일괄 적용 */
+.fa-solid--green {
+  color: #1db954;
+}
+
+.horizonBars:hover {
+  background-color: #1db954;
+}
+
+.card {
+  width: 188px;
+  height: 266px;
+  margin-right: 25px;
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card:hover {
+  background-color: #282828;
+}
+.card--horizon {
+  width: 614px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+.card--horizon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.card__img {
+  width: 156px;
+  height: 156px;
+}
+.card__img--horizon {
+  width: 80px;
+  height: 80px;
+}
+.card__textArea {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.card__textArea--horizon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0 10px;
+  font-weight: 700;
+}
+.card__play {
+  width: 48px;
+  height: 48px;
+  background-color: #1db954;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.card__play i {
+  font-size: 24px;
+  color: #000;
+}
+.card__text {
+  width: 156px;
+  height: 62px;
+}
+.card__text--horizon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.card__mainText {
+  color: #fff;
+}
+.card__subText {
+  color: #b3b3b3;
+}
+
+/* BEM Block(Common) */
+.horizonBar {
+  background-color: #282828;
+  border: 0;
+  height: 1px;
+  margin: 24px;
+}
+
+.profile {
+  width: 90px;
+  height: 28px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+.profile__avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #b3b3b3;
+}
+.profile__avatar i {
+  font-size: 22px;
+  height: 26px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.profile__name {
+  font-weight: 700;
+}
+.profile__menu {
+  width: 16px;
+  height: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.profile__menu i {
+  color: #fff;
+  display: flex;
+}
+
+.prevAndNextBtns {
+  width: 96px;
+  height: 32px;
+  margin-left: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.prevAndNextBtns__prev {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+}
+.prevAndNextBtns__prev i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.prevAndNextBtns__next {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+}
+.prevAndNextBtns__next i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/********* footer - playbackPanel *********/
+.footer {
+  width: 100%;
+  height: 96px;
+  background-color: #181818;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* 일괄 적용 */
+  /* leftSongInfo */
+  /* leftSongInfo END */
+  /* middlePlayBack */
+  /* middlePlayBack END */
+  /* rightListeningOptions */
+}
+.footer__btns {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  background-color: #181818;
+}
+.footer__btns i:hover {
+  color: #fff;
+}
+.footer .leftSongInfo {
+  width: 300px;
+  height: 56px;
+  margin: 24px;
+  display: flex;
+  align-items: center;
+}
+.footer .leftSongInfo__albumCover {
+  width: 56px;
+  height: 56px;
+}
+.footer .leftSongInfo__songInfoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 12px;
+}
+.footer .leftSongInfo__artist {
+  color: #b3b3b3;
+}
+.footer .leftSongInfo__pip {
+  margin: 0 12px;
+}
+.footer .middlePlayBack {
+  width: 722px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* upperBox */
+  /* lowerBox */
+}
+.footer .middlePlayBack__upperBox {
+  width: 200px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .middlePlayBack__playAndPause {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.footer .middlePlayBack__playAndPause:hover {
+  transform: scale(1.1);
+}
+.footer .middlePlayBack__playAndPause i {
+  color: #000;
+}
+.footer .middlePlayBack__playAndPause i:hover {
+  color: #000;
+}
+.footer .middlePlayBack__lowerBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 12px;
+}
+.footer .middlePlayBack__timeline {
+  width: 100%;
+  height: 4px;
+  background-color: #b3b3b3;
+  margin: 0 8px;
+}
+s .footer .middlePlayBack__timeFont {
+  color: #b3b3b3;
+}
+.footer .rightListeningOptions {
+  width: 300px;
+  height: 56px;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.footer .rightListeningOptions__volumeBar {
+  width: 93px;
+  height: 3px;
+  background-color: #b3b3b3;
+  margin-left: -12px;
+}
+
+/* footer END */
+/******** main ********/
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  /********* body *********/
+}
+.main .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 3000px;
+  background-color: #121212;
+  position: relative;
+  /********* boxes *********/
+}
+.main .body .boxes {
+  height: 100%;
+  width: 100%;
+}
+
+/********* main END *********/
+.boxes {
+  margin: 20px;
+}
+
+.box {
+  width: 1891px;
+  height: 316px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.box__cardsContainer {
+  display: flex;
+}
+
+/********  nav ********/
+.nav {
+  width: 300px;
+  height: 100%;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.nav__logo {
+  width: 100%;
+  height: 65px;
+  margin: 24px 0;
+  padding: 0 24px;
+  cursor: pointer;
+}
+.nav__logoImg {
+  max-width: 80%;
+  max-height: 100%;
+}
+.nav__upperMenu, .nav__lowerMenu {
+  margin: 24px 0;
+  padding: 0 24px;
+}
+.nav__li {
+  margin: 24px 0;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+.nav__li:hover {
+  color: #fff;
+}
+.nav__li i {
+  margin-right: 12px;
+  color: inherit;
+}
+.nav__li:nth-child(4) {
+  margin-top: 60px;
+}
+
+/********* header *********/
+.header {
+  width: 100%;
+  height: 300px;
+  background: #21125e;
+  background: radial-gradient(circle, #21125e 0%, #121212 100%);
+}
+.header__div {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.header__container {
+  margin: 20px;
+}
+.header__horizonBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 1891px;
+  height: 234px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,75 @@
+@use '../abstracts/' as *;
+
+.card{
+  width: $size-card-width;
+  height: $size-card-height;
+  margin-right:25px;
+  background-color: #181818;
+  @include flexForAlign(center, center, column);
+
+  &:hover{
+    background-color: #282828;
+  }
+
+  &--horizon{
+    width: $size-card-horizon-width;
+    height: $size-card-horizon-height;
+    @include flexForAlign(center, center, row);
+    margin-top:15px;
+    background-color: transparent;
+    transition: background-color .3s;
+    &:hover{
+      background-color: rgba(255,255,255,0.2);
+    }
+  }
+
+  &__img{
+    width: 156px;
+    height: 156px;
+    &--horizon{
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__textArea{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    @include flexForAlign(center, center);
+
+    &--horizon{
+      @include flexForAlign(space-between,center);
+      background-color: rgba(255,255,255,0.1);
+      padding : 0 10px;
+      font-weight: 700;
+    }
+  }
+
+  &__play{
+    width: 48px;
+    height: 48px;
+    background-color: $color-clickesGreen;
+    border-radius: 50%;
+    @include flexForAlign(center, center);
+
+    i {
+      font-size:24px;
+      color:#000;
+    }
+  }
+  &__text{
+    width: 156px;
+    height: 62px;
+    &--horizon{
+      @include flexForAlign(center, center);
+    }
+  }
+  
+  &__mainText{
+    color : $color-mainWhite;
+  }
+  &__subText{
+    color: $color-subGrey;
+  }
+}

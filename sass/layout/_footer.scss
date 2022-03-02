@@ -1,80 +1,56 @@
-// Color
-$--color-nav: #000;
-$--color-subGrey : #b3b3b3;
-$--color-body : #121212;
-$--color-footer: #181818;
-$--color-clickesGreen : #1db954;
-
- /* Size */
-$--size-nav-Margin : 24px 0;
-$--size-nav-Padding : 0 24px;
-
+@use '../abstracts' as *;
 
 /********* footer - playbackPanel *********/
 .footer{
   width: 100%;
-  height: 96px;
-  background-color:$--color-footer;
+  height: $size-footer-playback-height;
+  background-color:$color-footer;
   position: fixed;
   bottom:0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexForAlign(space-between,center);
 
   /* 일괄 적용 */
   &__btns{
-    width: 16px;
-    height: 16px;
+    width: $size-footer-btns-width;
+    height: $size-footer-btns-height;
     display: flex;
-    background-color: $--color-footer;
+    background-color: $color-footer;
     & i:hover{
-      color:#fff;
+      color: $color-hover;
     }
   }
 
   /* leftSongInfo */
   .leftSongInfo{
     width: 300px;
-    height: 80%;
+    height: $size-footer-divs-height;
     margin: 24px;
     display: flex;
     align-items: center;
     &__albumCover{
-      width: 56px;
-      height: 56px;
+      width: $size-footer-albumCover-width;
+      height: $size-footer-albumCover-height;
     }
 
     &__songInfoBox{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin : 0 12px;
+      @include flexForAlign(center, $direction : column);
+      margin : $size-footer-songInfo-margin;
     }
 
     &__artist{
-      color:$--color-subGrey;
-    }
-
-    &__like i{
-      display: flex;
+      color: $color-subGrey;
     }
     
     &__pip{
-      margin : 0 12px;
-      & i{
-        display: flex;
-      }
+      margin : $size-footer-songInfo-margin;
     }
   } /* leftSongInfo END */
 
   /* middlePlayBack */
   .middlePlayBack{
     width: 722px;
-    height: 56px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: $size-footer-divs-height;
+    @include flexForAlign(center, center, column);
     /* upperBox */
     &__upperBox{
       width:200px;
@@ -82,9 +58,6 @@ $--size-nav-Padding : 0 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      & button i {
-        display: flex;
-      }
     }
     
     &__playAndPause {
@@ -93,8 +66,7 @@ $--size-nav-Padding : 0 24px;
       background-color: #fff;
       color:#000;
       border-radius: 50%;
-      justify-content: center;
-      align-items: center;
+      @include flexForAlign(center, center);
       &:hover{
         transform: scale(1.1);
       }
@@ -108,37 +80,33 @@ $--size-nav-Padding : 0 24px;
     /* lowerBox */
     &__lowerBox{
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+      @include flexForAlign($crossAxis: center, $direction:row);
       margin-top:12px;
     }
 
     &__timeline{
       width: 100%;
       height: 4px;
-      background-color: $--color-subGrey;
+      background-color: $color-subGrey;
       margin: 0 8px;
     }s
 
     &__timeFont{
-      color: $--color-subGrey;
+      color: $color-subGrey;
     }
   } /* middlePlayBack END */
 
   /* rightListeningOptions */
   .rightListeningOptions{
     width: 300px;
-    height: 80%;
-    background-color: $--color-footer;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    height: $size-footer-divs-height;
+    background-color: $color-footer;
+    @include flexForAlign(space-evenly,center);
 
     &__volumeBar{
       width: 93px;
       height: 3px;
-      background-color:$--color-subGrey;
+      background-color: $color-subGrey;
       margin-left: -12px;
     }
   }
