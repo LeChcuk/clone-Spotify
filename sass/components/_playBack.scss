@@ -1,12 +1,14 @@
 @use '../abstracts/' as *;
 
 .playBack{
-  width: 722px;
+  width:30%;
+  max-width: $size-playback-width;
   height: $size-footer-divs-height;
   @include flexForAlign(center, center, column);
   /* upperBox */
   &__upperBox{
-    width:200px;
+    width:70%;
+    min-width:$size-playback-upperBox-width;
     height: 32px;
     display: flex;
     justify-content: space-between;
@@ -49,3 +51,7 @@
     color: $color-subGrey;
   }
 } 
+
+@include mobile{
+  
+}

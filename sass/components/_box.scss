@@ -24,13 +24,14 @@
 }  
 
 .box{
-  width: 1891px;
-  height: 316px;
+  width: 90vw;
+  max-width: $size-box-width;
+  height: $size-box-height;
   @include flexForAlign(space-between,flex-start,column);
 
   &--horizon{
     margin-top: 0;
-    height: 234px;
+    height: $size-box-height--horizon;
     position: relative;
   }
 

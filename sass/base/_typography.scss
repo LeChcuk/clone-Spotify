@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+html{
+  font-size: 16px;
+}
+
+
+h1 {
+  font-size: $size-font-h1;
+  font-weight: $weight-font-h1;
+}
+
+h2{
+  font-size: $size-font-h2;
+  font-weight: $weight-font-h2;
+}

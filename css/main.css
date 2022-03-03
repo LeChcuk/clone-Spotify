@@ -2,7 +2,6 @@
 /* Size */
 * {
   box-sizing: border-box;
-  font-size: 60px;
   color: white;
 }
 
@@ -26,8 +25,21 @@ li {
 
 i {
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   color: #b3b3b3;
+}
+
+/* 일괄 적용 */
+.fa-solid--green {
+  color: #1db954;
+}
+
+.horizonBars:hover {
+  background-color: #1db954;
+}
+
+html {
+  font-size: 16px;
 }
 
 h1 {
@@ -40,18 +52,9 @@ h2 {
   font-weight: 700;
 }
 
-/* 일괄 적용 */
-.fa-solid--green {
-  color: #1db954;
-}
-
-.horizonBars:hover {
-  background-color: #1db954;
-}
-
 .card {
-  width: 188px;
-  height: 266px;
+  max-width: 188px;
+  max-height: 266px;
   margin-right: 25px;
   background-color: #181818;
   display: flex;
@@ -63,8 +66,8 @@ h2 {
   background-color: #282828;
 }
 .card--horizon {
-  width: 614px;
-  height: 80px;
+  max-width: 614px;
+  max-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +151,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 80px;
+  margin-right: 10rem;
 }
 .profile__avatar {
   width: 28px;
@@ -213,7 +216,7 @@ h2 {
 }
 
 .boxes {
-  margin: 20px;
+  margin: 1.2em;
   grid-area: main-view;
   position: relative;
 }
@@ -234,7 +237,8 @@ h2 {
 }
 
 .box {
-  width: 1891px;
+  width: 90vw;
+  max-width: 1891px;
   height: 316px;
   display: flex;
   justify-content: space-between;
@@ -258,9 +262,9 @@ h2 {
 }
 
 .songInfo {
-  width: 300px;
+  max-width: 300px;
   height: 56px;
-  margin: 24px;
+  margin: 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -273,17 +277,18 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 12px;
+  margin: 0 0.8em;
 }
 .songInfo__artist {
   color: #b3b3b3;
 }
 .songInfo__pip {
-  margin: 0 12px;
+  margin: 0 0.8em;
 }
 
 .playBack {
-  width: 722px;
+  width: 30%;
+  max-width: 722px;
   height: 56px;
   display: flex;
   justify-content: center;
@@ -293,7 +298,8 @@ h2 {
   /* lowerBox */
 }
 .playBack__upperBox {
-  width: 200px;
+  width: 70%;
+  min-width: 200px;
   height: 32px;
   display: flex;
   justify-content: space-between;
@@ -369,8 +375,8 @@ s .playBack__timeFont {
   /* footer 일괄 적용 */
 }
 .footer__btns {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   display: flex;
   background-color: #181818;
 }
@@ -406,8 +412,8 @@ s .playBack__timeFont {
 .nav__logo {
   width: 100%;
   height: 65px;
-  margin: 24px 0;
-  padding: 0 24px;
+  margin: 1.5em 0;
+  padding: 0 1.5em;
   cursor: pointer;
 }
 .nav__logoImg {
@@ -415,11 +421,11 @@ s .playBack__timeFont {
   max-height: 100%;
 }
 .nav__upperMenu, .nav__lowerMenu {
-  margin: 24px 0;
-  padding: 0 24px;
+  margin: 1.5em 0;
+  padding: 0 1.5em;
 }
 .nav__li {
-  margin: 24px 0;
+  margin: 1.5em 0;
   color: #b3b3b3;
   cursor: pointer;
 }

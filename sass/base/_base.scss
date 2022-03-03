@@ -3,7 +3,6 @@
 
 * {
   box-sizing: border-box;
-  font-size:60px;
   color:white;
 }
 
@@ -26,18 +25,8 @@ li{
 
 i {
   display: flex;
-  font-size: 16px;
+  font-size: $size-btns-icons;
   color:$color-subGrey;
-}
-
-h1 {
-  font-size: $size-font-h1;
-  font-weight: $weight-font-h1;
-}
-
-h2{
-  font-size: $size-font-h2;
-  font-weight: $weight-font-h2;
 }
 
 /* 일괄 적용 */
@@ -47,4 +36,11 @@ h2{
 
 .horizonBars:hover{
   background-color: $color-clickesGreen;
+}
+
+@media screen and (min-width: 1080px){
+  // :root{
+  //   $size-btns-icons : 4rem;
+  // }
+  $size-btns-icons : 2rem;
 }

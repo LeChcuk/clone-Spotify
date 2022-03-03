@@ -1,8 +1,8 @@
 @use '../abstracts/' as *;
 
 .card{
-  width: $size-card-width;
-  height: $size-card-height;
+  max-width: $size-card-width;
+  max-height: $size-card-height;
   margin-right:25px;
   background-color: #181818;
   @include flexForAlign(center, center, column);
@@ -12,8 +12,8 @@
   }
 
   &--horizon{
-    width: $size-card-horizon-width;
-    height: $size-card-horizon-height;
+    max-width: $size-card-horizon-width;
+    max-height: $size-card-horizon-height;
     @include flexForAlign(center, center, row);
     margin-top:15px;
     background-color: transparent;
