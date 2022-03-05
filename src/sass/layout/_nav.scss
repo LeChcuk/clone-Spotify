@@ -2,16 +2,16 @@
 
 /********  nav ********/
 .nav{
-  width: $size-nav-width;
+  width: var(--size-nav-width);
   height: 100%;
-  background-color: $color-nav;
+  background-color: var(--color-nav);
   grid-area: nav-bar;
   position: fixed;
   &__logo{
     width: 100%;
     height: 65px;
-    margin: $size-nav-margin;
-    padding: $size-nav-padding;
+    margin: var(--size-nav-margin);
+    padding: var(--size-nav-padding);
     cursor: pointer;  
   }
 
@@ -22,17 +22,18 @@
 
   &__upperMenu,
   &__lowerMenu{
-    margin: $size-nav-margin;
-    padding: $size-nav-padding;
+    margin: var(--size-nav-margin);
+    padding: var(--size-nav-padding);
   }
 
   &__li{
-    margin: $size-nav-margin;
-    color:$color-subGrey;
+    font-size: var(--font-size-small);
+    margin:var(--size-nav-margin);
+    color:var(--color-subGrey);
     cursor: pointer;
 
     &:hover{
-      color: $color-hover;
+      color: var(--color-hover);
     }
 
     & i{

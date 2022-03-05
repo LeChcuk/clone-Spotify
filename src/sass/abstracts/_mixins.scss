@@ -4,7 +4,7 @@
 $breakpoints:(
   small: 40em,
   medium: 65em,
-  large: 80em
+  large: 90em
 );
 
 @mixin flexForAlign($mainAxis: center, $crossAxis: center, $direction:row){
@@ -14,20 +14,10 @@ $breakpoints:(
   flex-direction: $direction;
 }
 
-@mixin mobile{
-  @media (max-width: map-get($breakpoints, "small")){
-    @content;
-  }
-}
+@mixin mq($key){
+  $size: map-get($breakpoints, $key);
 
-@mixin tablet{
-  @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet){
-    @content;
-  }
-}
-
-@mixin desktop{
-  @media (min-width: $breakpoint-desktop){
+  @media only screen and (min-width: $size){
     @content;
   }
 }

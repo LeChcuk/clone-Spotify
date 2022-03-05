@@ -1,0 +1,56 @@
+@use '../abstracts/' as *;
+
+.boxes{
+  margin: var(--size-body-margin);
+  grid-area: main-view;
+  position: relative;
+
+  &__background-Box{
+    width: 100%;
+    height: 332px;
+    background-color: var(--color-box-bg);
+    background-image:  var(--color-box-bg-gradient);
+    position: absolute;
+    top:0;
+    left: -1rem;
+    margin-top:calc((var(--size-header-height) + 1rem) * -1);
+  }
+
+  &__gridContainer{
+    display: grid;
+    grid-gap: 1.5rem;
+    padding: 0 2rem;
+  }
+}  
+
+.box{
+  width: var(--size-box-width);
+  max-width: var(--size-box-maxWidth);
+  height: var(--size-box-height);
+  min-width: 0;
+  @include flexForAlign(space-around,flex-start,column);
+
+  &--horizon{
+    height: var(--size-box-height--horizon);
+    position: relative;
+  }
+
+  &__cardsContainer{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 80%;
+    flex: 1;
+    // overflow: hidden;
+
+    &--horizon{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width : var(--size-box-width);
+      max-width: var(--size-box-maxWidth);
+      max-height: var(--size-box-height--horizon);
+      gap: 0;
+    }
+  }
+}

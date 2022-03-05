@@ -1,0 +1,26 @@
+@use '../abstracts/' as *;
+
+.songInfo{
+  max-width:var(--size-songinfo-width);
+  height: var(--size-footer-height);
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  &__albumCover{
+    width: var(--size-footer-albumCover-width);
+    height: var(--size-footer-albumCover-height);
+  }
+
+  &__textBox{
+    @include flexForAlign(center, $direction : column);
+    margin : var(--size-footer-songInfo-margin);
+  }
+
+  &__artist{
+    color: var(--color-subGrey);
+  }
+  
+  &__pip{
+    margin :var(--size-footer-songInfo-margin);
+  }
+}

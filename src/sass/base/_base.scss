@@ -1,0 +1,56 @@
+@use '../abstracts/' as *;
+
+* {
+  box-sizing: border-box;
+  color:white;
+}
+
+html, body{
+  height: 100%;
+  position: relative;
+}
+body{
+  overflow: hidden;
+}
+
+button{
+  border: none;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+i {
+  display: flex;
+  font-size: var(--size-btns-icons);
+  color:var(--color-subGrey);
+}
+
+/* 일괄 적용 */
+.fa-solid--green{
+  color: var(--color-clickesGreen);
+}
+
+.horizonBars:hover{
+  background-color: var(--color-clickesGreen);
+}
+
+
+// @media screen and (min-width: 80em){
+
+  // work
+  // :root{
+    // --size-btns-icons : 4rem;
+  // }
+
+
+  // not work
+  // :root{
+    // $size-btns-icons : 4rem;
+  // }
+
+  // not work
+  // $size-btns-icons : 2rem;
+// }

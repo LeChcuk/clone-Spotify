@@ -1,33 +1,30 @@
-/* Size */
-:root {
-  --color-primary-100: #ffb199;
-  --color-primary-200: #ff8a66;
-  --color-primary-300: #ff6333;
-  --color-article-100: #9fbef9;
-  --color-article-200: #6e9ef7;
-  --color-article-300: #3e7ef4;
-  --color-youtube-100: #f99fb6;
-  --color-youtube-200: #f66f91;
-  --color-youtube-300: #f33f6c;
-  --font-size-300: 1rem;
-  --font-size-400: 1.125rem;
-  --font-size-500: 1.563rem;
-  --font-size-600: 1.953rem;
-  --font-size-700: 2.441rem;
-  --font-size-800: 3.052rem;
-}
-@media only screen and (min-width: 40em) {
-  :root {
-    --font-size-300: 1rem;
-    --font-size-400: 1.425rem;
-    --font-size-500: 2rem;
-    --font-size-600: 2.827rem;
-    --font-size-700: 4rem;
-    --font-size-800: 5.653rem;
+@use 'prac-Color' as *;
+@use 'prac-Fonts' as *;
+@use 'media-query' as *;
+
+:root{
+  @each $color, $shades in $colors{
+    @each $shade, $value in $shades{
+      --color-#{$color}-#{$shade} : #{$value};
+    }
+  }
+
+  @each $screen-size, $font-size in $type-scale {
+    @if $screen-size == small {
+      @each $size, $value in $font-size{
+        --font-size-#{$size}: #{$value};
+      }
+    } @else{
+      @include mq(small){
+        @each $size, $value in $font-size{
+          --font-size-#{$size}: #{$value};
+        }
+      }
+    }
   }
 }
 
-.init {
+.init{
   width: var(--font-size-300);
 }
 
@@ -67,8 +64,9 @@
   --toggle-button: var(--toggle-button-light);
 }
 
-.init {
-  width: var(--color-primary-100);
+:root{
 }
 
-/*# sourceMappingURL=prac.css.map */
+.init{
+  width: var(--color-primary-100);
+}

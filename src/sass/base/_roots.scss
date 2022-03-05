@@ -1,0 +1,76 @@
+@use '../abstracts/' as *;
+
+:root{
+   // Color
+  --color-mainWhite : #fff;
+  --color-subGrey : #b3b3b3;
+  --color-nav: #000;
+  --color-body : #121212;
+  --color-footer: #181818;
+  --color-clickesGreen : #1db954;
+  --color-hover : #fff;
+  --color-box-bg : rgb(80, 40, 240);
+  --color-box-bg-gradient: linear-gradient(rgba(0,0,0,.6) 0,#121212 100%),url('../../imgs/bgnoise.svg');;
+
+   // weight
+  --weight-font-h1 : 800;
+  --weight-font-h2 : 700;
+
+    /* fonts */
+  --size-font-h1 : 2rem;
+  --size-font-h2 : 1.5rem;
+
+  --font-size-small : 1rem;
+  --font-size-medium : 2rem;
+  --font-size-large : 4rem;
+
+   // layouts
+  --size-header-height : 64px;
+
+  --size-body-margin: 1.2em;
+
+  --size-footer-divs-height: 56px;
+  --size-footer-songInfo-margin : 0 0.8em;
+  --size-footer-playback-height : 6rem;
+  --size-footer-btns-width: 1rem;
+  --size-footer-btns-height: 1rem;
+  --size-footer-albumCover-width: 56px;
+  --size-footer-albumCover-height: 56px;
+
+   // components
+  --size-box-maxWidth:1891px;
+  --size-box-width : 70vw;
+  --size-box-height : 316px;
+  --size-box-height--horizon : 234px;
+
+  --size-songinfo-width: 300px;
+
+  --size-playback-width: 722px;
+  --size-playback-upperBox-width: 200px;
+
+  --size-card-width: 188px;
+  --size-card-height: 266px;
+  --size-card-horizon-width: 614px;
+  --size-card-horizon-height: 80px;
+
+  --size-nav-width : 300px;
+  --size-nav-margin : 1.5em 0;
+  --size-nav-padding : 0 1.5em;
+
+  --size-btns-icons : 1rem;
+
+  // mobile 320~480px
+  @include mq(small){ // 40em = 640px
+  }
+
+  // tablet 768~1024px
+  @include mq(large){ // 90em = 1440px
+    --size-nav-width: 400px;
+    
+    --size-btns-icons : 2rem;
+
+    --font-size-small : 2rem;
+    --font-size-medium: 3rem;
+    --font-size-large: 5rem;
+  }
+}

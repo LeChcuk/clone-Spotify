@@ -7,12 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 10rem;
+  position: fixed;
+  right: calc(90px - 2rem);
   &__avatar{
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background-color: $color-subGrey;
+    background-color: var(--color-subGrey);
     & i{
       font-size:22px;
       height: 26px;
@@ -20,7 +21,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color:$color-mainWhite;
+      color:var(--color-mainWhite);
     }
   }
   
@@ -33,7 +34,7 @@
     height: 16px;
     background-color: rgba(0,0,0,0.7);
     & i{
-      color:$color-mainWhite;
+      color:var(--color-mainWhite);
       display: flex;
     }
   }

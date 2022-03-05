@@ -25,3 +25,10 @@ font-size 값을 변수로 할당하고, 미디어 쿼리를 이용해서 특정
 ### Sass 반응형
 
 1) @mixin + @media + @content를 이용. 미디어쿼리
+
+html 2880
+body 2880
+div.main 2880
+div.mainViewContainer 2880
+header 2880
+div.header__div 2816 + padding-left 32 + padding-right 32

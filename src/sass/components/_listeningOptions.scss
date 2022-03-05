@@ -3,15 +3,15 @@
  /* rightListeningOptions */
 .listeningOptions{
   width: 300px;
-  height: $size-footer-divs-height;
-  background-color: $color-footer;
+  height: var(--size-footer-divs-height);
+  background-color: var(--color-footer);
   @include flexForAlign(space-evenly,center);
 
   // footer .btns 일괄 적용을 덮어씌우기 위한 important
   &__volumeBar{
     width: 93px !important;
     height: 3px !important;
-    background-color: $color-subGrey !important;
+    background-color: var(--color-subGrey) !important;
     margin-left: -12px;
   }
 }

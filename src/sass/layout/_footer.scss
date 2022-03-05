@@ -8,8 +8,8 @@
 /********* footer - playbackPanel *********/
 .footer{
   width: 100%;
-  height: $size-footer-playback-height;
-  background-color:$color-footer;
+  height: var(--size-footer-playback-height);
+  background-color:var(--color-footer);
   position: fixed;
   bottom:0px;
   grid-area: now-playing-bar;
@@ -17,12 +17,12 @@
 
   /* footer 일괄 적용 */
   &__btns{
-    width: $size-footer-btns-width;
-    height: $size-footer-btns-height;
+    width: var(--size-footer-btns-width);
+    height: var(--size-footer-btns-height);
     display: flex;
-    background-color: $color-footer;
+    background-color: var(--color-footer);
     & i:hover{
-      color: $color-hover;
+      color: var(--color-hover);
     }
   }
 } 

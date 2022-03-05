@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+
+// @components
+// prevAndNextBtns
+// profile
+
+/********* header *********/
+.header{
+  // width: 100%;
+  height: var(--size-header-height);
+  position: relative;
+  z-index: 2;
+  grid-area: main-view;
+
+  &__div{
+    // width: 80%;
+    height: 64px;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+  }
+}

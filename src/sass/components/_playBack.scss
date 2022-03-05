@@ -2,13 +2,13 @@
 
 .playBack{
   width:30%;
-  max-width: $size-playback-width;
-  height: $size-footer-divs-height;
+  max-width: var(--size-playback-width);
+  height: var(--size-footer-divs-height);
   @include flexForAlign(center, center, column);
   /* upperBox */
   &__upperBox{
     width:70%;
-    min-width:$size-playback-upperBox-width;
+    min-width:var(--size-playback-upperBox-width);
     height: 32px;
     display: flex;
     justify-content: space-between;
@@ -43,15 +43,11 @@
   &__timeline{
     width: 100%;
     height: 4px;
-    background-color: $color-subGrey;
+    background-color: var(--color-subGrey);
     margin: 0 8px;
   }s
 
   &__timeFont{
-    color: $color-subGrey;
+    color: var(--color-subGrey);
   }
 } 
-
-@include mobile{
-  
-}
