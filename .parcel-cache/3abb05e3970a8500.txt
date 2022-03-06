@@ -249,7 +249,7 @@
 68C:\coding\clone-spotify\node_modules\caniuse-lite\data\regions\GW.js121436361000000000 0
 59C:\coding\clone-spotify\node_modules\is-yarn-global\LICENSE131602160630000000 0
 62C:\coding\clone-spotify\node_modules\concat-map\example\map.js129835976340000000 0
-39C:\coding\clone-spotify\src\js\index.js132910221688630093 0
+39C:\coding\clone-spotify\src\js\index.js132910230479323109 0
 87C:\coding\clone-spotify\node_modules\@parcel\runtime-js\src\helpers\worker\js-loader.js121436361000000000 0
 61C:\coding\clone-spotify\node_modules\css-tree\data\patch.json121436361000000000 0
 88C:\coding\clone-spotify\node_modules\update-notifier\node_modules\semver\functions\lt.js121436361000000000 0
@@ -282,7 +282,7 @@
 52C:\coding\clone-spotify\src\sass\layout\_header.scss132908006310664949 0
 75C:\coding\clone-spotify\node_modules\string.prototype.trimend\.eslintignore121436361000000000 0
 60C:\coding\clone-spotify\node_modules\postcss-selector-parser132910202167871990 1
-49C:\coding\clone-spotify\node_modules\hash.js\test132910224975081695 1
+49C:\coding\clone-spotify\node_modules\hash.js\test132910224975342089 1
 59C:\coding\clone-spotify\node_modules\timsort\src\timsort.js131138581980000000 0
 63C:\coding\clone-spotify\node_modules\htmlnano\docs\netlify.toml121436361000000000 0
 59C:\coding\clone-spotify\node_modules\randombytes\browser.js121436361000000000 0
@@ -1239,7 +1239,7 @@
 73C:\coding\clone-spotify\node_modules\send\node_modules\debug\node_modules132910198586569055 1
 64C:\coding\clone-spotify\node_modules\is-boolean-object\.eslintrc121436361000000000 0
 51C:\coding\clone-spotify\node_modules\weak-lru-cache132903442632002253 1
-60C:\coding\clone-spotify\node_modules\es-to-primitive\helpers132910225088876757 1
+60C:\coding\clone-spotify\node_modules\es-to-primitive\helpers132910225089266799 1
 58C:\coding\clone-spotify\node_modules\on-finished\README.md130770808350000000 0
 72C:\coding\clone-spotify\node_modules\caniuse-lite\dist\unpacker\index.js121436361000000000 0
 83C:\coding\clone-spotify\node_modules\caniuse-lite\data\features\css-touch-action.js121436361000000000 0
@@ -1663,7 +1663,7 @@
 63C:\coding\clone-spotify\node_modules\side-channel\test\index.js121436361000000000 0
 48C:\coding\clone-spotify\node_modules\utils-merge132910198593925884 1
 53C:\coding\clone-spotify\node_modules\v8-compile-cache132910202136392922 1
-48C:\coding\clone-spotify\node_modules\sha.js\test132910224973493695 1
+48C:\coding\clone-spotify\node_modules\sha.js\test132910224973674517 1
 65C:\coding\clone-spotify\node_modules\source-map-support\README.md121436361000000000 0
 97C:\coding\clone-spotify\node_modules\htmlnano\docs\versioned_docs\version-2.0.0\060-contribute.md121436361000000000 0
 62C:\coding\clone-spotify\node_modules\browserslist\update-db.js121436361000000000 0
@@ -1685,7 +1685,7 @@
 48C:\coding\clone-spotify\node_modules\xxhash-wasm132903442641943002 1
 53C:\coding\clone-spotify\node_modules\csso\lib\replace132910202176659252 1
 56C:\coding\clone-spotify\node_modules\acorn\dist\acorn.js121436361000000000 0
-67C:\coding\clone-spotify\node_modules\minimalistic-crypto-utils\test132910224969601678 1
+67C:\coding\clone-spotify\node_modules\minimalistic-crypto-utils\test132910224971011689 1
 46C:\coding\clone-spotify\node_modules\rc\cli.js131694975400000000 0
 58C:\coding\clone-spotify\node_modules\is-arguments\index.js121436361000000000 0
 57C:\coding\clone-spotify\node_modules\events\tests\once.js121436361000000000 0
@@ -3475,7 +3475,7 @@
 64C:\coding\clone-spotify\node_modules\public-encrypt\package.json121436361000000000 0
 56C:\coding\clone-spotify\node_modules\is-npm\package.json121436361000000000 0
 68C:\coding\clone-spotify\node_modules\public-encrypt\publicEncrypt.js121436361000000000 0
-56C:\coding\clone-spotify\node_modules\public-encrypt\test132910224973852856 1
+56C:\coding\clone-spotify\node_modules\public-encrypt\test132910224975253412 1
 65C:\coding\clone-spotify\node_modules\public-encrypt\withPublic.js121436361000000000 0
 66C:\coding\clone-spotify\node_modules\public-encrypt\test\1024.priv121436361000000000 0
 62C:\coding\clone-spotify\node_modules\@parcel\markdown-ansi\lib132903465778021591 1
@@ -3834,7 +3834,7 @@
 73C:\coding\clone-spotify\node_modules\is-generator-function\test\corejs.js121436361000000000 0
 70C:\coding\clone-spotify\node_modules\@parcel\runtime-react-refresh\lib132910202130487172 1
 76C:\coding\clone-spotify\node_modules\postcss-merge-longhand\types\index.d.ts121436361000000000 0
-55C:\coding\clone-spotify\node_modules\get-intrinsic\test132910225083356759 1
+55C:\coding\clone-spotify\node_modules\get-intrinsic\test132910225084516761 1
 69C:\coding\clone-spotify\node_modules\postcss-merge-longhand\types\lib132910202171785865 1
 85C:\coding\clone-spotify\node_modules\postcss-merge-longhand\types\lib\colornames.d.ts121436361000000000 0
 59C:\coding\clone-spotify\node_modules\is-nan\test\shimmed.js121436361000000000 0
@@ -4195,7 +4195,7 @@
 71C:\coding\clone-spotify\node_modules\node-addon-api\tools\conversion.js121436361000000000 0
 59C:\coding\clone-spotify\node_modules\object.assign\index.js121436361000000000 0
 70C:\coding\clone-spotify\node_modules\@parcel\core\lib\applyRuntimes.js121436361000000000 0
-60C:\coding\clone-spotify\node_modules\es-abstract\2021\BigInt132910225110669659 1
+60C:\coding\clone-spotify\node_modules\es-abstract\2021\BigInt132910225111869658 1
 73C:\coding\clone-spotify\node_modules\object-inspect\test\indent-option.js121436361000000000 0
 63C:\coding\clone-spotify\node_modules\object.assign\package.json121436361000000000 0
 62C:\coding\clone-spotify\node_modules\object.assign\polyfill.js121436361000000000 0
@@ -4372,7 +4372,7 @@
 62C:\coding\clone-spotify\node_modules\nodemon\doc\cli\usage.txt121436361000000000 0
 66C:\coding\clone-spotify\node_modules\is-symbol\.github\FUNDING.yml121436361000000000 0
 63C:\coding\clone-spotify\node_modules\nodemon\bin\postinstall.js121436361000000000 0
-53C:\coding\clone-spotify\node_modules\miller-rabin\bin132910224969391677 1
+53C:\coding\clone-spotify\node_modules\miller-rabin\bin132910224970371772 1
 55C:\coding\clone-spotify\node_modules\node-releases\data132903442622762752 1
 58C:\coding\clone-spotify\node_modules\node-releases\LICENSE121436361000000000 0
 67C:\coding\clone-spotify\node_modules\crypto-random-string\readme.md121436361000000000 0
@@ -4821,7 +4821,7 @@
 64C:\coding\clone-spotify\node_modules\css-tree\lib\lexer\trace.js121436361000000000 0
 77C:\coding\clone-spotify\node_modules\caniuse-lite\data\features\hashchange.js121436361000000000 0
 89C:\coding\clone-spotify\node_modules\lmdb\prebuilds\linux-arm64\electron.abi99.glibc.node121436361000000000 0
-56C:\coding\clone-spotify\node_modules\browserify-zlib\src132910225153713453 1
+56C:\coding\clone-spotify\node_modules\browserify-zlib\src132910225153773449 1
 102C:\coding\clone-spotify\node_modules\@parcel\transformer-react-refresh-wrap\src\helpers\.eslintrc.json121436361000000000 0
 86C:\coding\clone-spotify\node_modules\lmdb\prebuilds\linux-arm64\node.abi102.glibc.node121436361000000000 0
 85C:\coding\clone-spotify\node_modules\lmdb\prebuilds\linux-arm64\node.abi72.glibc.node121436361000000000 0
@@ -5289,7 +5289,7 @@
 64C:\coding\clone-spotify\node_modules\iconv-lite\encodings\tables132910198598235891 1
 75C:\coding\clone-spotify\node_modules\iconv-lite\encodings\tables\cp950.json130976329310000000 0
 75C:\coding\clone-spotify\node_modules\iconv-lite\encodings\tables\eucjp.json130976329310000000 0
-53C:\coding\clone-spotify\node_modules\es-abstract\2015132910225112289861 1
+53C:\coding\clone-spotify\node_modules\es-abstract\2015132910225112451025 1
 82C:\coding\clone-spotify\node_modules\@parcel\reporter-cli\test\CLIReporter.test.js121436361000000000 0
 82C:\coding\clone-spotify\node_modules\@parcel\package-manager\src\installPackage.js121436361000000000 0
 84C:\coding\clone-spotify\node_modules\iconv-lite\encodings\tables\gb18030-ranges.json130976329310000000 0
@@ -5539,7 +5539,7 @@
 67C:\coding\clone-spotify\node_modules\es-abstract\2021\ToBigInt64.js121436361000000000 0
 71C:\coding\clone-spotify\node_modules\express\node_modules\ms\license.md131394109200000000 0
 78C:\coding\clone-spotify\node_modules\express\node_modules\debug\.coveralls.yml131419593830000000 0
-53C:\coding\clone-spotify\node_modules\es-abstract\2016132910225112310509 1
+53C:\coding\clone-spotify\node_modules\es-abstract\2016132910225112470441 1
 75C:\coding\clone-spotify\node_modules\express\node_modules\debug\.travis.yml131505605660000000 0
 100C:\coding\clone-spotify\node_modules\@parcel\node-resolver-core\test\fixture\packages\source\dist.js121436361000000000 0
 78C:\coding\clone-spotify\node_modules\express\node_modules\debug\component.json131505607290000000 0
@@ -5740,7 +5740,7 @@
 68C:\coding\clone-spotify\node_modules\es-abstract\2021\MinFromTime.js121436361000000000 0
 63C:\coding\clone-spotify\node_modules\es-abstract\2021\modulo.js121436361000000000 0
 67C:\coding\clone-spotify\node_modules\es-abstract\2021\msFromTime.js121436361000000000 0
-60C:\coding\clone-spotify\node_modules\es-abstract\2021\Number132910225110699652 1
+60C:\coding\clone-spotify\node_modules\es-abstract\2021\Number132910225111889654 1
 76C:\coding\clone-spotify\node_modules\es-abstract\2020\BigInt\exponentiate.js121436361000000000 0
 88C:\coding\clone-spotify\node_modules\@swc\helpers\lib\_class_private_field_loose_base.js132811082760000000 0
 86C:\coding\clone-spotify\node_modules\es-abstract\2021\OrdinaryCreateFromConstructor.js121436361000000000 0
@@ -5835,7 +5835,7 @@
 71C:\coding\clone-spotify\node_modules\es-abstract\2020\ArraySetLength.js121436361000000000 0
 75C:\coding\clone-spotify\node_modules\es-abstract\2020\ArraySpeciesCreate.js121436361000000000 0
 80C:\coding\clone-spotify\node_modules\body-parser\node_modules\debug\CHANGELOG.md131505607260000000 0
-60C:\coding\clone-spotify\node_modules\es-abstract\2020\BigInt132910225110459653 1
+60C:\coding\clone-spotify\node_modules\es-abstract\2020\BigInt132910225111842565 1
 89C:\coding\clone-spotify\node_modules\@parcel\transformer-js\parcel-swc.linux-x64-gnu.node121436361000000000 0
 72C:\coding\clone-spotify\node_modules\es-abstract\2020\BigIntBitwiseOp.js121436361000000000 0
 61C:\coding\clone-spotify\node_modules\css-tree\dist\csstree.js121436361000000000 0
@@ -5914,7 +5914,7 @@
 75C:\coding\clone-spotify\node_modules\@parcel\transformer-html\src\inline.js121436361000000000 0
 63C:\coding\clone-spotify\node_modules\es-abstract\2020\modulo.js121436361000000000 0
 70C:\coding\clone-spotify\node_modules\es-abstract\2020\MonthFromTime.js121436361000000000 0
-60C:\coding\clone-spotify\node_modules\es-abstract\2020\Number132910225110499657 1
+60C:\coding\clone-spotify\node_modules\es-abstract\2020\Number132910225111859852 1
 72C:\coding\clone-spotify\node_modules\es-abstract\2020\NumberBitwiseOp.js121436361000000000 0
 80C:\coding\clone-spotify\node_modules\caniuse-lite\data\features\notifications.js121436361000000000 0
 52C:\coding\clone-spotify\node_modules\colord\index.js121436361000000000 0

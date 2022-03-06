@@ -2,14 +2,14 @@ const express = require('express');
 
 const app = express();
 
-app.set('port', process.env.PORT || 8888);
+app.set('port', process.env.PORT || 3000);
 
 app.get('/', (req, res) => {
     res.send('Hello Woooorld');
 });
 
 app.listen(app.get('port'), () => {
-    console.log('8888번 포트에서 서버 대기 중입니다!');
+    console.log('3000번 포트에서 서버 대기 중입니다!');
 });
 
 // footer - playbackpannel
