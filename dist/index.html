@@ -7,119 +7,621 @@
   <title>Spotify - Clone</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link rel="stylesheet" href="/index.b1276d39.css">
+  <link rel="stylesheet" type="text/css" href="/index.34df27b5.css">
   <script src="https://kit.fontawesome.com/7976a7248f.js" crossorigin="anonymous"></script>
-  <script defer="" src="/index.de158e3a.js"></script>
+  <script defer="" src="/index.aa69868b.js"></script>
 </head>
 <body>
 
   <!-- main -->
-  <section class="main">
-    <!-- navBar -->
-    <nav class="navBar">
-      <div class="navLogo">
-        <img src="/logo.c5dd6f41.png" alt="logo" class="navLogo__img">
+  <div class="main">
+
+    <!-- nav -->
+    <nav class="nav"> 
+      <div class="nav__logo">
+        <img src="/logo.c5dd6f41.png" alt="logo" class="nav__logoImg"> 
       </div>
-      <div class="navUpperMenu">
-        <ul class="navUpperMenu__ul">
-          <li class="navUpperMenu__li"><i class="fa-solid fa-house"></i>홈</li>
-          <li class="navUpperMenu__li"><i class="fa-solid fa-search"></i>검색하기</li>
-          <li class="navUpperMenu__li"><i class="fa-solid fa-book"></i>내 라이브러리</li>
-          <li class="navUpperMenu__li"><i class="fa-soPlid fa-square-plus"></i>플레이리스트 만들기</li>
-          <li class="navUpperMenu__li"><i class="fa-solid fa-heart"></i>좋아요 표시한 곡</li>
+      <div class="nav__upperMenu">
+        <ul class="nav__ul">
+          <li class="nav__li"><i class="fa-solid fa-house"></i>홈</li>
+          <li class="nav__li"><i class="fa-solid fa-search"></i>검색하기</li>
+          <li class="nav__li"><i class="fa-solid fa-book"></i>내 라이브러리</li>
+          <li class="nav__li"><i class="fa-solid fa-square-plus"></i>플레이리스트 만들기</li>
+          <li class="nav__li"><i class="fa-solid fa-heart"></i>좋아요 표시한 곡</li>
         </ul>
       </div>
-      <hr class="navMiddleBar">
-      <div class="navLowerMenu">
-        <ul class="navLowerMenu__ul">
-          <li class="navLowerMenu__li">Mock Up Data</li>
-          <li class="navLowerMenu__li">내 플레이리스트 #5</li>
-          <li class="navLowerMenu__li">아이유 믹스</li>
+      <hr class="partition">
+      <div class="nav__lowerMenu">
+        <ul class="nav__ul">
+          <li class="nav__li">Mock Up Data</li>
+          <li class="nav__li">내 플레이리스트 #5</li>
+          <li class="nav__li">아이유 믹스</li>
         </ul>
-        
       </div>
     </nav>
-    <!-- body -->
-    <section class="body">
+
+    <div class="mainViewContainer">
       <!-- header -->
       <header class="header">
-        header
-        <div class="prevAndNextBtns"></div>
-        <div class="profile"></div>
-        <div class="ad"></div>
+        <div class="header__div">
+          <div class="prevAndNextBtns">
+            <button class="prevAndNextBtns__prev">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="prevAndNextBtns__next">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+
+          <div class="profile">
+            <figure class="profile__avatar">
+              <i class="fa-solid fa-user"></i>
+            </figure>
+            <span class="profile__name">Pjw</span>
+            <button class="profile__menu">
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
+          </div>
+
+        </div>
       </header>
 
       <!-- boxes -->
       <section class="boxes">
-        boxes
-      </section>
+        <div class="boxes__background-Box"></div>
+        <div class="boxes__gridContainer">
+          <!-- box111 -->
+          <section class="box box--horizon">
+            <h1 class="box__title">좋은 아침입니다</h1>
+            <div class="box__cardsContainer box__cardsContainer--horizon">
+              <!-- card horizon -->
+              <div class="card card--horizon">
+                <img class="card__img card__img--horizon" src="/liked-songs-640.fc546bc1.png">
+                <div class="card__textArea card__textArea--horizon">
+                  <div class="card__text card__text--horizon">
+                    좋아요 표시한 곡
+                  </div>
+                  <button class="card__play">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
 
-    </section> <!-- .body END-->
-  </section> <!-- .main END-->
+              <div class="card card--horizon">
+                <img class="card__img card__img--horizon" src="/liked-songs-640.fc546bc1.png">
+                <div class="card__textArea card__textArea--horizon">
+                  <div class="card__text card__text--horizon">
+                    좋아요 표시한 곡
+                  </div>
+                  <button class="card__play">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
 
-  <!-- playbackPannel -->
-  <footer class="playbackPannel">
-    <div class="leftSongInfo">
-      <img src="/macmiller.fc94d691.jpg" alt="" class="leftSongInfo__albumCover">
-      <div class="leftSongInfo__songInfoBox">
-        <p class="songInfoBox__title">Everybody</p>
-        <p class="songInfoBox__artist">Mac Miller</p>
+              <div class="card card--horizon">
+                <img class="card__img card__img--horizon" src="/liked-songs-640.fc546bc1.png">
+                <div class="card__textArea card__textArea--horizon">
+                  <div class="card__text card__text--horizon">
+                    좋아요 표시한 곡
+                  </div>
+                  <button class="card__play">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card card--horizon">
+                <img class="card__img card__img--horizon" src="/liked-songs-640.fc546bc1.png">
+                <div class="card__textArea card__textArea--horizon">
+                  <div class="card__text card__text--horizon">
+                    좋아요 표시한 곡
+                  </div>
+                  <button class="card__play">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card card--horizon">
+                <img class="card__img card__img--horizon" src="/liked-songs-640.fc546bc1.png">
+                <div class="card__textArea card__textArea--horizon">
+                  <div class="card__text card__text--horizon">
+                    좋아요 표시한 곡
+                  </div>
+                  <button class="card__play">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card card--horizon">
+                <img class="card__img card__img--horizon" src="/liked-songs-640.fc546bc1.png">
+                <div class="card__textArea card__textArea--horizon">
+                  <div class="card__text card__text--horizon">
+                    좋아요 표시한 곡
+                  </div>
+                  <button class="card__play">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+          <!-- Box1 -->
+          <section class="box">
+            <h2 class="box__title">들어볼 만한 Show</h2>
+            <h2 class="box__seeAll">모두 보기</h2>
+            <div class="box__cardsContainer">
+              <!-- cards -->
+              <div class="card">
+                <img class="card__img" src="/conan.5b9a353d.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      Conan O'Brien Needs a Friend
+                    </p>
+                    <p class="card__subText">
+                      Team Coco & Earwolf
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/conan.5b9a353d.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      Conan O'Brien Needs a Friend
+                    </p>
+                    <p class="card__subText">
+                      Team Coco & Earwolf
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/conan.5b9a353d.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      Conan O'Brien Needs a Friend
+                    </p>
+                    <p class="card__subText">
+                      Team Coco & Earwolf
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/conan.5b9a353d.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      Conan O'Brien Needs a Friend
+                    </p>
+                    <p class="card__subText">
+                      Team Coco & Earwolf
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/conan.5b9a353d.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      Conan O'Brien Needs a Friend
+                    </p>
+                    <p class="card__subText">
+                      Team Coco & Earwolf
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/conan.5b9a353d.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      Conan O'Brien Needs a Friend
+                    </p>
+                    <p class="card__subText">
+                      Team Coco & Earwolf
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/conan.5b9a353d.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      Conan O'Brien Needs a Friend
+                    </p>
+                    <p class="card__subText">
+                      Team Coco & Earwolf
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/conan.5b9a353d.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      Conan O'Brien Needs a Friend
+                    </p>
+                    <p class="card__subText">
+                      Team Coco & Earwolf
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/conan.5b9a353d.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      Conan O'Brien Needs a Friend
+                    </p>
+                    <p class="card__subText">
+                      Team Coco & Earwolf
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Box2 -->
+          <section class="box">
+            <h2 class="box__title">Pjw 님을 위한 믹스 & 추천</h2>
+            <h2 class="box__seeAll">모두 보기</h2>
+            <div class="box__cardsContainer">
+              <!-- cards -->
+              <div class="card">
+                <img class="card__img" src="/daily1.c564ba3b.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      데일리 믹스1
+                    </p>
+                    <p class="card__subText">
+                      IU, HYUKOH, Yerin Baek 등
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/daily1.c564ba3b.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      데일리 믹스1
+                    </p>
+                    <p class="card__subText">
+                      IU, HYUKOH, Yerin Baek 등
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/daily1.c564ba3b.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      데일리 믹스1
+                    </p>
+                    <p class="card__subText">
+                      IU, HYUKOH, Yerin Baek 등
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/daily1.c564ba3b.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      데일리 믹스1
+                    </p>
+                    <p class="card__subText">
+                      IU, HYUKOH, Yerin Baek 등
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/daily1.c564ba3b.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      데일리 믹스1
+                    </p>
+                    <p class="card__subText">
+                      IU, HYUKOH, Yerin Baek 등
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/daily1.c564ba3b.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      데일리 믹스1
+                    </p>
+                    <p class="card__subText">
+                      IU, HYUKOH, Yerin Baek 등
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/daily1.c564ba3b.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      데일리 믹스1
+                    </p>
+                    <p class="card__subText">
+                      IU, HYUKOH, Yerin Baek 등
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/daily1.c564ba3b.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      데일리 믹스1
+                    </p>
+                    <p class="card__subText">
+                      IU, HYUKOH, Yerin Baek 등
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/daily1.c564ba3b.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      데일리 믹스1
+                    </p>
+                    <p class="card__subText">
+                      IU, HYUKOH, Yerin Baek 등
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Box3 -->
+          <section class="box">
+            <h2 class="box__title">최근 재생한 항목</h2>
+            <h2 class="box__seeAll">모두 보기</h2>
+            <div class="box__cardsContainer">
+              <!-- cards -->
+              <div class="card">
+                <img class="card__img" src="/playlist.66b83c96.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      CALL ME IF YOU GET LOST
+                    </p>
+                    <p class="card__subText">
+                      Tyler, The Creator
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/playlist.66b83c96.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      CALL ME IF YOU GET LOST
+                    </p>
+                    <p class="card__subText">
+                      Tyler, The Creator
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/playlist.66b83c96.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      CALL ME IF YOU GET LOST
+                    </p>
+                    <p class="card__subText">
+                      Tyler, The Creator
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/playlist.66b83c96.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      CALL ME IF YOU GET LOST
+                    </p>
+                    <p class="card__subText">
+                      Tyler, The Creator
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/playlist.66b83c96.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      CALL ME IF YOU GET LOST
+                    </p>
+                    <p class="card__subText">
+                      Tyler, The Creator
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/playlist.66b83c96.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      CALL ME IF YOU GET LOST
+                    </p>
+                    <p class="card__subText">
+                      Tyler, The Creator
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/playlist.66b83c96.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      CALL ME IF YOU GET LOST
+                    </p>
+                    <p class="card__subText">
+                      Tyler, The Creator
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/playlist.66b83c96.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      CALL ME IF YOU GET LOST
+                    </p>
+                    <p class="card__subText">
+                      Tyler, The Creator
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card__img" src="/playlist.66b83c96.jpg">
+                <div class="card__textArea">
+                  <div class="card__text">
+                    <p class="card__mainText">
+                      CALL ME IF YOU GET LOST
+                    </p>
+                    <p class="card__subText">
+                      Tyler, The Creator
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </div>
+        <!--  boxes__gridContainer END -->
+        
+      </section> <!-- .boxes END -->
+    </div> <!--  mainViewContainer END -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="songInfo">
+      <img src="/macmiller.fc94d691.jpg" alt="" class="songInfo__albumCover">
+      <div class="songInfo__textBox">
+        <p class="songInfo__title">Everybody</p>
+        <p class="songInfo__artist">Mac Miller</p>
       </div>
       
-      <button class="leftSongInfo__like playbackPannel__btns">
+      <button class="songInfo__like footer__btns">
         <i class="fa-solid fa-solid--green-off fa-heart"></i>
       </button>
-      <button class="leftSongInfo__pip playbackPannel__btns">
+      <button class="songInfo__pip footer__btns">
         <i class="fa-solid fa-solid--green-off fa-window-restore"></i>
       </button>
     </div>
 
-    <div class="middlePlayBack">
-      <div class="middlePlayBack__upperBox">
-        <button class="middlePlayBack__shuffle playbackPannel__btns ">
+    <div class="playBack">
+      <div class="playBack__upperBox">
+        <button class="playBack__shuffle footer__btns ">
           <i class="fa-solid fa-solid--green-off fa-shuffle"></i>
         </button>
-        <button class="middlePlayBack__prevSong playbackPannel__btns">
+        <button class="playBack__prevSong footer__btns">
           <i class="fa-solid fa-backward-step"></i>
         </button>
-        <button class="middlePlayBack__playAndPause playbackPannel__btns">
+        <button class="playBack__playAndPause footer__btns">
           <i class="fa-solid fa-play"></i>
         </button>
-        <button class="middlePlayBack__nextSong playbackPannel__btns">
+        <button class="playBack__nextSong footer__btns">
           <i class="fa-solid fa-forward-step"></i>
         </button>
-        <button class="middlePlayBack__repeat playbackPannel__btns">
+        <button class="playBack__repeat footer__btns">
           <i class="fa-solid fa-solid--green-off fa-repeat"></i>
         </button>
       </div>
-      <div class="middlePlayBack__lowerBox">
-        <p class="middlePlayBack__currentTime middlePlayBack__timeFont">0:00</p>
-        <div class="middlePlayback__timeline bars"></div>
-        <p class="middlePlayBack__amoutTime middlePlayBack__timeFont">4:27</p>
+      <div class="playBack__lowerBox">
+        <p class="playBack__currentTime playBack__timeFont">0:00</p>
+        <div class="playBack__timeline horizonBars"></div>
+        <p class="playBack__amoutTime playBack__timeFont">4:27</p>
       </div>
     </div>
 
-    <div class="rightListeningOptions">
-      <button class="rightListeningOptions__lyrics playbackPannel__btns">
+    <div class="listeningOptions">
+      <button class="listeningOptions__lyrics footer__btns">
         <i class="fa-solid fa-solid--green-off fa-microphone"></i>
       </button>
-      <button class="rightListeningOptions__playlist playbackPannel__btns">
+      <button class="listeningOptions__playlist footer__btns">
         <i class="fa-solid fa-solid--green-off fa-bars"></i>
       </button>
-      <button class="rightListeningOptions__devices playbackPannel__btns">
+      <button class="listeningOptions__devices footer__btns">
         <i class="fa-solid fa-hard-drive"></i>
       </button>
-      <button class="rightListeningOptions__volume playbackPannel__btns">
+      <button class="listeningOptions__volume footer__btns">
         <i class="fa-solid fa-volume-low"></i>
       </button>
-      <div class="rightListeningOptions__volumeBar playbackPannel__btns bars">
-        
+      <div class="listeningOptions__volumeBar footer__btns horizonBars">   
       </div>
-      <div class="rightListeningOptions__fullSize playbackPannel__btns">
+      <div class="listeningOptions__fullSize footer__btns">
         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
       </div>
     </div>
   </footer>
+  </div> <!--  main END -->
 
 </body>
 </html>
