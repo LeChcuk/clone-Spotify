@@ -1,16 +1,16 @@
 8582
-36C:\coding\clone-spotify\package.json132910266499296946 0
+36C:\coding\clone-spotify\package.json132910283803479603 0
 54C:\coding\clone-spotify\node_modules\svgo\lib\style.js121436361000000000 0
 79C:\coding\clone-spotify\node_modules\es-abstract\2015\CreateIterResultObject.js121436361000000000 0
 93C:\coding\clone-spotify\node_modules\dom-serializer\node_modules\entities\lib\encode.d.ts.map121436361000000000 0
-41C:\coding\clone-spotify\package-lock.json132910262244456353 0
+41C:\coding\clone-spotify\package-lock.json132910278555035647 0
 68C:\coding\clone-spotify\node_modules\source-map-js\lib\quick-sort.js121436361000000000 0
 44C:\coding\clone-spotify\src\css\prac.css.map132907828941862138 0
 65C:\coding\clone-spotify\node_modules\finalhandler\node_modules\ms132910198592275916 1
 88C:\coding\clone-spotify\node_modules\cacheable-request\node_modules\get-stream\readme.md121436361000000000 0
 42C:\coding\clone-spotify\src\sass\prac.scss132907828941223331 0
 69C:\coding\clone-spotify\node_modules\es-abstract\2019\TimeFromYear.js121436361000000000 0
-55C:\coding\clone-spotify\node_modules\.package-lock.json132910262244796381 0
+55C:\coding\clone-spotify\node_modules\.package-lock.json132910278555325638 0
 65C:\coding\clone-spotify\node_modules\postcss-unique-selectors\src132910202131800931 1
 68C:\coding\clone-spotify\node_modules\util\support\isBufferBrowser.js121436361000000000 0
 47C:\coding\clone-spotify\node_modules\source-map132910202158566014 1
@@ -36,7 +36,7 @@
 87C:\coding\clone-spotify\node_modules\@parcel\transformer-babel\lib\remapAstLocations.js121436361000000000 0
 42C:\coding\clone-spotify\node_modules\boxen132901611415660383 1
 47C:\coding\clone-spotify\node_modules\@szmarczak132901611409605286 1
-34C:\coding\clone-spotify\.gitignore132901611200706285 0
+34C:\coding\clone-spotify\.gitignore132910269024173929 0
 73C:\coding\clone-spotify\node_modules\@swc\helpers\src\_async_generator.js132732112500000000 0
 65C:\coding\clone-spotify\node_modules\chrome-trace-event\README.md121436361000000000 0
 67C:\coding\clone-spotify\node_modules\postcss-normalize-string\types132910202137702972 1
@@ -56,7 +56,7 @@
 84C:\coding\clone-spotify\node_modules\@parcel\transformer-json\lib\JSONTransformer.js121436361000000000 0
 66C:\coding\clone-spotify\node_modules\nanoid\async\index.browser.js121436361000000000 0
 86C:\coding\clone-spotify\node_modules\es-abstract\2020\OrdinaryCreateFromConstructor.js121436361000000000 0
-28C:\coding\clone-spotify\dist132910266548065807 1
+28C:\coding\clone-spotify\dist132910283614415740 1
 65C:\coding\clone-spotify\node_modules\es-abstract\2020\ToNumber.js121436361000000000 0
 45C:\coding\clone-spotify\node_modules\css-tree132910202182315758 1
 67C:\coding\clone-spotify\node_modules\es-abstract\2015\msFromTime.js121436361000000000 0
@@ -88,7 +88,7 @@
 80C:\coding\clone-spotify\node_modules\@parcel\runtime-service-worker\package.json121436361000000000 0
 59C:\coding\clone-spotify\node_modules\get-symbol-description132910225087746788 1
 63C:\coding\clone-spotify\node_modules\utility-types\package.json121436361000000000 0
-36C:\coding\clone-spotify\node_modules132910262243778571 1
+36C:\coding\clone-spotify\node_modules132910278554305653 1
 81C:\coding\clone-spotify\node_modules\postcss-normalize-positions\types\index.d.ts121436361000000000 0
 59C:\coding\clone-spotify\node_modules\is-arguments\README.md121436361000000000 0
 65C:\coding\clone-spotify\node_modules\is-typed-array\.eslintignore121436361000000000 0
@@ -8570,8 +8570,8 @@
 47C:\coding\clone-spotify\dist\conan.5b9a353d.jpg132910225321043998 0
 48C:\coding\clone-spotify\dist\daily1.c564ba3b.jpg132910225321109535 0
 51C:\coding\clone-spotify\dist\index.34df27b5.css.map132910225321489539 0
-46C:\coding\clone-spotify\dist\index.739bf03c.js132910266547885867 0
-50C:\coding\clone-spotify\dist\index.739bf03c.js.map132910266548045827 0
+46C:\coding\clone-spotify\dist\index.739bf03c.js132910283614235734 0
+50C:\coding\clone-spotify\dist\index.739bf03c.js.map132910283614405774 0
 46C:\coding\clone-spotify\dist\index.aa69868b.js132910205158506418 0
 50C:\coding\clone-spotify\dist\index.aa69868b.js.map132910205158513213 0
 47C:\coding\clone-spotify\dist\index.b1276d39.css132906837198271187 0

@@ -2279,9 +2279,9 @@ var zlib = require('zlib');
  * Copyright(c) 2014-2015 Douglas Christopher Wilson
  * MIT Licensed
  */ 'use strict';
+var process = require("process");
 var Buffer = require("buffer").Buffer;
 var global = arguments[3];
-var process = require("process");
 /**
  * Module dependencies.
  * @private
@@ -7551,8 +7551,8 @@ function eventTargetAgnosticAddListener(emitter, name, listener, flags) {
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 // USE OR OTHER DEALINGS IN THE SOFTWARE.
 'use strict';
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
 module.exports = Readable;
 /*<replacement>*/ var Duplex;
 /*</replacement>*/ Readable.ReadableState = ReadableState;
@@ -24006,9 +24006,9 @@ http.METHODS = [
 ];
 
 },{"./lib/request":"csW06","./lib/response":"47huq","xtend":"93zjj","builtin-status-codes":"iqSVp","url":"7qjc7"}],"csW06":[function(require,module,exports) {
-var global = arguments[3];
-var process = require("process");
 var Buffer = require("buffer").Buffer;
+var process = require("process");
+var global = arguments[3];
 var capability = require('./capability');
 var inherits = require('inherits');
 var response = require('./response');
