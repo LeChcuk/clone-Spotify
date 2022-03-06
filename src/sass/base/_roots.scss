@@ -65,12 +65,12 @@
 
   // tablet 768~1024px
   @include mq(large){ // 90em = 1440px
-    --size-nav-width: 400px;
+    // --size-nav-width: 400px;
     
-    --size-btns-icons : 2rem;
+    // --size-btns-icons : 2rem;
 
-    --font-size-small : 2rem;
-    --font-size-medium: 3rem;
-    --font-size-large: 5rem;
+    // --font-size-small : 1rem;
+    // --font-size-medium: 3rem;
+    // --font-size-large: 5rem;
   }
 }

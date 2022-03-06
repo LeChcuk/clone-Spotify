@@ -94,20 +94,11 @@ h2 {
   --size-nav-padding: 0 1.5em;
   --size-btns-icons: 1rem;
 }
-@media only screen and (min-width: 90em) {
-  :root {
-    --size-nav-width: 400px;
-    --size-btns-icons: 2rem;
-    --font-size-small: 2rem;
-    --font-size-medium: 3rem;
-    --font-size-large: 5rem;
-  }
-}
-
 .card {
   max-width: var(--size-card-width);
   max-height: var(--size-card-height);
   background-color: #181818;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +118,6 @@ h2 {
   margin-top: 15px;
   background-color: transparent;
   transition: background-color 0.3s;
-  margin-right: 1.5rem;
   padding: 0;
 }
 .card--horizon:hover {
@@ -155,6 +145,8 @@ h2 {
   padding: 0 10px;
   font-weight: 700;
   margin-top: 0;
+  flex: 1;
+  height: 80px;
 }
 .card__play {
   width: 48px;
@@ -194,7 +186,7 @@ h2 {
 }
 
 /* BEM Block(Common) */
-.horizonBar {
+.partition {
   background-color: #282828;
   border: 0;
   height: 1px;
@@ -299,21 +291,30 @@ h2 {
   max-width: var(--size-box-maxWidth);
   height: var(--size-box-height);
   min-width: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: column;
 }
 .box--horizon {
-  height: var(--size-box-height--horizon);
   position: relative;
+}
+.box__title {
+  display: inline-block;
+}
+.box__seeAll {
+  display: flex;
+  justify-content: end;
+  color: var(--color-subGrey);
+  font-size: var(--font-size-small);
+  cursor: pointer;
+}
+.box__seeAll:hover {
+  text-decoration: underline;
 }
 .box__cardsContainer {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  width: 80%;
   flex: 1;
+  overflow: hidden;
+  max-height: 270px;
 }
 .box__cardsContainer--horizon {
   display: flex;
@@ -322,7 +323,8 @@ h2 {
   width: var(--size-box-width);
   max-width: var(--size-box-maxWidth);
   max-height: var(--size-box-height--horizon);
-  gap: 0;
+  row-gap: 0.5rem;
+  column-gap: 1.5rem;
 }
 
 .songInfo {
@@ -462,6 +464,7 @@ s .playBack__timeFont {
   height: 100%;
   background-color: var(--color-body);
   position: absolute;
+  overflow: auto;
   left: var(--size-nav-width);
 }
 

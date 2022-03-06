@@ -4,6 +4,7 @@
   max-width: var(--size-card-width);
   max-height: var(--size-card-height);
   background-color: #181818;
+  cursor: pointer;
   @include flexForAlign(center, center, column);
   padding: 1rem;
 
@@ -18,7 +19,7 @@
     margin-top:15px;
     background-color: transparent;
     transition: background-color .3s;
-    margin-right:1.5rem;
+    // margin-right:1.5rem;
     padding:0;
     &:hover{
       background-color: rgba(255,255,255,0.2);
@@ -47,6 +48,9 @@
       padding : 0 10px;
       font-weight: 700;
       margin-top:0;
+      flex: 1;
+    height: 80px;
+
     }
   }
 

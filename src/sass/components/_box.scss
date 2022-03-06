@@ -28,20 +28,36 @@
   max-width: var(--size-box-maxWidth);
   height: var(--size-box-height);
   min-width: 0;
-  @include flexForAlign(space-around,flex-start,column);
+  // @include flexForAlign(space-around,flex-start,column);
 
   &--horizon{
-    height: var(--size-box-height--horizon);
+    // height: var(--size-box-height--horizon);
     position: relative;
   }
+
+  &__title{
+    display: inline-block;
+  }
+  &__seeAll{
+    display: flex;
+    justify-content: end;
+    color:var(--color-subGrey);
+    font-size: var(--font-size-small);
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  
 
   &__cardsContainer{
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    width: 80%;
+    // width: 80%;
     flex: 1;
-    // overflow: hidden;
+    overflow: hidden;
+    max-height: 270px;
 
     &--horizon{
       display: flex;
@@ -50,7 +66,8 @@
       width : var(--size-box-width);
       max-width: var(--size-box-maxWidth);
       max-height: var(--size-box-height--horizon);
-      gap: 0;
+      row-gap: 0.5rem;
+      column-gap: 1.5rem;
     }
   }
 }
