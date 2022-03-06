@@ -521,23 +521,22 @@ function hmrAcceptRun(bundle, id) {
 },{}],"ebWYT":[function(require,module,exports) {
 const express = require('express');
 const app = express();
-app.set('port', 8888);
+app.set('port', 1234);
 app.get('/', (req, res)=>{
     res.send('Hello Woooorld');
 });
 app.listen(app.get('port'), ()=>{
-    console.log('8888번 포트에서 서버 대기 중입니다!');
-});
-// footer - playbackpannel
-const footer = document.querySelector('.playbackPannel');
-// footer에 들어오는 모든 클릭 이벤트를 감지
-footer.addEventListener('click', (e)=>{
-    // green-toggle해야하는 6개의 버튼이 클릭되었을 경우. toggle한다.
-    if (e.target.matches('.fa-solid--green-off') || e.target.matches('.fa-solid--green')) {
-        e.target.classList.toggle('fa-solid--green-off');
-        e.target.classList.toggle('fa-solid--green');
-    }
-});
+    console.log('1234번 포트에서 서버 대기 중입니다!');
+}); // // footer - playbackpannel
+ // const footer = document.querySelector('.playbackPannel');
+ // // footer에 들어오는 모든 클릭 이벤트를 감지
+ // footer.addEventListener('click', (e) => {
+ //     // green-toggle해야하는 6개의 버튼이 클릭되었을 경우. toggle한다.
+ //     if (e.target.matches('.fa-solid--green-off') || e.target.matches('.fa-solid--green')) {
+ //         e.target.classList.toggle('fa-solid--green-off');
+ //         e.target.classList.toggle('fa-solid--green');
+ //     }
+ // });
 
 },{"express":"nvDge"}],"nvDge":[function(require,module,exports) {
 /*!
@@ -2280,9 +2279,9 @@ var zlib = require('zlib');
  * Copyright(c) 2014-2015 Douglas Christopher Wilson
  * MIT Licensed
  */ 'use strict';
+var Buffer = require("buffer").Buffer;
 var global = arguments[3];
 var process = require("process");
-var Buffer = require("buffer").Buffer;
 /**
  * Module dependencies.
  * @private
@@ -7552,8 +7551,8 @@ function eventTargetAgnosticAddListener(emitter, name, listener, flags) {
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 // USE OR OTHER DEALINGS IN THE SOFTWARE.
 'use strict';
-var global = arguments[3];
 var process = require("process");
+var global = arguments[3];
 module.exports = Readable;
 /*<replacement>*/ var Duplex;
 /*</replacement>*/ Readable.ReadableState = ReadableState;
@@ -8955,8 +8954,8 @@ Object.defineProperty(Duplex.prototype, 'destroyed', {
 // Implement an async ._write(chunk, encoding, cb), and it'll handle all
 // the drain event emission and buffering.
 'use strict';
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
 module.exports = Writable;
 /* <replacement> */ function WriteReq(chunk, encoding, cb) {
     this.chunk = chunk;
@@ -10057,8 +10056,8 @@ module.exports = pipeline;
 
 },{"../../../errors":"aJlwj","./end-of-stream":"aOMy2"}],"6q1Nd":[function(require,module,exports) {
 'use strict';
-var process = require("process");
 var Buffer = require("buffer").Buffer;
+var process = require("process");
 /* eslint camelcase: "off" */ var assert = require('assert');
 var Zstream = require('pako/lib/zlib/zstream');
 var zlib_deflate = require('pako/lib/zlib/deflate.js');
@@ -24008,8 +24007,8 @@ http.METHODS = [
 
 },{"./lib/request":"csW06","./lib/response":"47huq","xtend":"93zjj","builtin-status-codes":"iqSVp","url":"7qjc7"}],"csW06":[function(require,module,exports) {
 var global = arguments[3];
-var Buffer = require("buffer").Buffer;
 var process = require("process");
+var Buffer = require("buffer").Buffer;
 var capability = require('./capability');
 var inherits = require('inherits');
 var response = require('./response');
@@ -24333,9 +24332,9 @@ xhr = null // Help gc
 ;
 
 },{}],"47huq":[function(require,module,exports) {
-var Buffer = require("buffer").Buffer;
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
+var Buffer = require("buffer").Buffer;
 var capability = require('./capability');
 var inherits = require('inherits');
 var stream = require('readable-stream');
@@ -26543,8 +26542,8 @@ exports.constants = {
 
 },{"randombytes":"8hjhE","create-hash":"2WyL8","create-hmac":"k1utz","browserify-sign/algos":"busIB","pbkdf2":"g38Hg","browserify-cipher":"d4idn","diffie-hellman":"hwD3y","browserify-sign":"jbRNy","create-ecdh":"9Rcg1","public-encrypt":"h9Rdh","randomfill":"k3tsT"}],"8hjhE":[function(require,module,exports) {
 'use strict';
-var global = arguments[3];
 var process = require("process");
+var global = arguments[3];
 // limit of Crypto.getRandomValues()
 // https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues
 var MAX_BYTES = 65536;
@@ -28368,8 +28367,8 @@ module.exports = function(iterations, keylen) {
 };
 
 },{}],"T9r9Q":[function(require,module,exports) {
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
 var defaultEncoding;
 /* istanbul ignore next */ if (global.process && global.process.browser) defaultEncoding = 'utf-8';
 else if (global.process && global.process.version) {

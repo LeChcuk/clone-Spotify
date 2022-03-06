@@ -8954,8 +8954,8 @@ Object.defineProperty(Duplex.prototype, 'destroyed', {
 // Implement an async ._write(chunk, encoding, cb), and it'll handle all
 // the drain event emission and buffering.
 'use strict';
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
 module.exports = Writable;
 /* <replacement> */ function WriteReq(chunk, encoding, cb) {
     this.chunk = chunk;
@@ -20683,8 +20683,8 @@ app.del = deprecate.function(app.delete, 'app.del: Use app.delete instead');
  * Copyright(c) 2014-2017 Douglas Christopher Wilson
  * MIT Licensed
  */ 'use strict';
-var process = require("process");
 var Buffer = require("buffer").Buffer;
+var process = require("process");
 /**
  * Module dependencies.
  * @private
@@ -24006,9 +24006,9 @@ http.METHODS = [
 ];
 
 },{"./lib/request":"csW06","./lib/response":"47huq","xtend":"93zjj","builtin-status-codes":"iqSVp","url":"7qjc7"}],"csW06":[function(require,module,exports) {
-var process = require("process");
 var global = arguments[3];
 var Buffer = require("buffer").Buffer;
+var process = require("process");
 var capability = require('./capability');
 var inherits = require('inherits');
 var response = require('./response');
@@ -24332,9 +24332,9 @@ xhr = null // Help gc
 ;
 
 },{}],"47huq":[function(require,module,exports) {
+var process = require("process");
 var Buffer = require("buffer").Buffer;
 var global = arguments[3];
-var process = require("process");
 var capability = require('./capability');
 var inherits = require('inherits');
 var stream = require('readable-stream');
@@ -28367,8 +28367,8 @@ module.exports = function(iterations, keylen) {
 };
 
 },{}],"T9r9Q":[function(require,module,exports) {
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
 var defaultEncoding;
 /* istanbul ignore next */ if (global.process && global.process.browser) defaultEncoding = 'utf-8';
 else if (global.process && global.process.version) {

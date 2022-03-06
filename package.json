@@ -2,7 +2,6 @@
   "name": "clone-spotify",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "nodemon app",
     "build": "npx parcel index.html"
@@ -28,6 +27,7 @@
     "util": "^0.12.4"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
     "express": "^4.17.3",
     "parcel": "^2.3.2"
   }
