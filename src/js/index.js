@@ -1,3 +1,8 @@
+// 1) npm run start -> node index.js 서버 가동
+// 2) localhost:3000/login -> Spotify API -> (redirected) netlify/callback
+// netlify callback 페이지가 구현되어 있지 않기 때문에 에러 발생
+// netlify App에 /callback page를 추가하기.
+
 const express = require('express');
 const res = require('express/lib/response');
 const { nextTick } = require('process');
