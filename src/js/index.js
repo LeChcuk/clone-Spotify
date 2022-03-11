@@ -1,4 +1,6 @@
 const express = require('express');
+const res = require('express/lib/response');
+const { nextTick } = require('process');
 const qs = require('querystring');
 
 const app = express();
@@ -23,9 +25,25 @@ const scope = `user-read-playback-state
                 user-read-currently-playing
                 user-read-recently-played`;
 
+const generateRandomString = function (length) {
+    let text = '';
+    const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+    for (let i = 0; i < length; i++) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return text;
+};
+
+const state = generateRandomString(16);
+
 app.set('port', process.env.PORT || 3000);
 
-app.get('/login', (req, res) => {
+app.get('/', (req, res) => {
+    res.send('hi');
+});
+
+app.get('/login', (req, res, next) => {
     // first call '/authorize' -> 사용자 인증
     res.redirect(
         'https://accounts.spotify.com/authorize?' +
@@ -34,11 +52,72 @@ app.get('/login', (req, res) => {
                 client_id,
                 redirect_uri,
                 scope,
+                state,
             })
     );
 });
 
-app.get('/callback', (req, res) => {
+app.get('/callback', (req, res, next) => {
+    const code = req.query.code || null;
+    const state = req.query.state || null;
+
+    if (state === null) {
+        res.redirect(
+            '/#' +
+                qs.stringify({
+                    error: 'state_mismatch',
+                })
+        );
+    } else {
+        const authOptions = {
+            url: 'https://accounts.spotify.com/api/token',
+            form: {
+                code,
+                redirect_uri,
+                grant_type: 'authorization_code',
+            },
+            headers: {
+                Authorization:
+                    'Basic ' + new Buffer(client_id + ':' + client_secret).toString('base64'),
+            },
+            json: true,
+        };
+
+        req.post(authOptions, (err, response, body) => {
+            if (!err && response.statusCode === 200) {
+                // 에러없이 성공한 경우
+                const access_token = body.access_token;
+                const refresh_token = body.refresh_token;
+                const options = {
+                    url: 'https://api.spotify.com/v1/me',
+                    headers: { Authorization: 'Bearer ' + access_token },
+                    json: true,
+                };
+
+                // use the access token to access the Spotify Web API
+                req.get(options, function (err_inner, response_inner, body_inner) {
+                    console.log(body_inner);
+                });
+
+                // we can also pass the token to the browser to make requests from there
+                res.redirect(
+                    '/#' +
+                        qs.stringify({
+                            access_token: access_token,
+                            refresh_token: refresh_token,
+                        })
+                );
+            } else {
+                res.redirect(
+                    '/#' +
+                        qs.stringify({
+                            error: 'invalid_token',
+                        })
+                );
+            }
+        });
+    }
+
     // second call '/api/token' -> 첫 번째 콜에서 응답받은 authorization code와 client secret을 전달하여
     //                              access token과 refresh token을 전달받는다.
     res.redirect('/#' + qs.stringify({}));
@@ -46,6 +125,7 @@ app.get('/callback', (req, res) => {
 
 app.get('/refresh_token', (req, res) => {
     // third call '/refresh_token' -> 이전 access token이 만료되면 새로운 access token을 발급.
+    res.send('yap');
 });
 
 app.listen(app.get('port'), () => {

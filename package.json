@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "nodemon app",
+    "start": "nodemon --watch ./src/js ./src/js/index.js",
     "build": "npx parcel index.html --dist-dir dist"
   },
   "keywords": [],
