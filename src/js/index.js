@@ -7,11 +7,14 @@ const express = require('express');
 const res = require('express/lib/response');
 const { nextTick } = require('process');
 const qs = require('querystring');
+const fs = require('fs').promises;
+const dotenv = require('dotenv');
 
+dotenv.config();
 const app = express();
-const client_id = '45dec37f740b449090afe4e2842e24d0';
-const client_secret = '20aee07c0e274ecb9cb0c84e2da751a8';
-const redirect_uri = 'https://heuristic-hamilton-e7b508.netlify.app/callback';
+const client_id = process.env.CLIENT_ID;
+const client_secret = process.env.CLIENT_SECRET;
+const redirect_uri = process.env.REDIRECT_URI;
 
 // scope로 지정한 항목에 한해서 Spotify server로부터 정보를 받을 수 있다.
 const scope = `user-read-playback-state
@@ -44,9 +47,7 @@ const state = generateRandomString(16);
 
 app.set('port', process.env.PORT || 3000);
 
-app.get('/', (req, res) => {
-    res.send('hi');
-});
+app.get('/', (req, res) => {});
 
 app.get('/login', (req, res, next) => {
     // first call '/authorize' -> 사용자 인증
